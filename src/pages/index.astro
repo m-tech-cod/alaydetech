@@ -1,11 +1,325 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import { testimonials } from "../data/testimonials";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { projects } from "../data/projects";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="Accueil" description="Alayde Tech conçoit des applications web, plateformes SaaS et solutions numériques sur mesure.">
+  <!-- Hero Section -->
+  <section class="relative min-h-[85vh] flex items-center justify-center px-4 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#1E3A8A]/5 via-transparent to-[#F59E0B]/5"></div>
+    <div class="relative max-w-4xl mx-auto text-center">
+      <span class="inline-block bg-[#F59E0B]/10 text-[#F59E0B] text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+        ✦ Agence de développement logiciel
+      </span>
+      
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1E3A8A] leading-tight">
+        Des logiciels qui<br />
+        <span class="text-[#F59E0B]">font la différence</span>
+      </h1>
+
+      <p class="mt-6 text-base sm:text-lg text-[#64748B] max-w-2xl mx-auto">
+        Alayde Tech conçoit des applications web et des plateformes SaaS sur mesure.
+      </p>
+
+      <div class="mt-10 flex flex-wrap gap-4 justify-center">
+        <a href="/contact" class="bg-[#1E3A8A] text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-[#1E3A8A]/90 transition-all hover:shadow-xl hover:-translate-y-0.5 text-sm sm:text-base">
+          Discuter de votre projet
+        </a>
+        <a href="/projects" class="border-2 border-[#1E3A8A] text-[#1E3A8A] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-[#1E3A8A]/5 transition-all hover:shadow-xl hover:-translate-y-0.5 text-sm sm:text-base">
+          Voir nos réalisations
+        </a>
+      </div>
+
+      <!-- Statistiques -->
+      <div class="mt-12 grid grid-cols-3 gap-4 max-w-lg mx-auto">
+        <div>
+          <p class="text-2xl sm:text-3xl font-bold text-[#1E3A8A]">
+            <span class="stat-number" data-target="10">0+</span>
+          </p>
+          <p class="text-xs text-[#64748B]">Projets</p>
+        </div>
+        <div>
+          <p class="text-2xl sm:text-3xl font-bold text-[#1E3A8A]">
+            <span class="stat-number" data-target="5">0+</span>
+          </p>
+          <p class="text-xs text-[#64748B]">ONG</p>
+        </div>
+        <div>
+          <p class="text-2xl sm:text-3xl font-bold text-[#1E3A8A]">
+            <span class="stat-number" data-target="100">0+</span>
+          </p>
+          <p class="text-xs text-[#64748B]">Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pourquoi Alayde Tech -->
+  <section class="reveal py-16 px-4 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-sm font-semibold text-[#F59E0B] uppercase tracking-wider">Pourquoi nous choisir</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A] mt-2">
+        3 raisons de faire <span class="text-[#F59E0B]">confiance</span>
+      </h2>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center border border-[#E2E8F0] hover:shadow-xl transition">
+        <div class="text-5xl mb-4">💻</div>
+        <h3 class="text-xl font-semibold text-[#1E3A8A]">Solutions sur mesure</h3>
+        <p class="text-sm text-[#64748B] mt-2">Chaque projet est unique et adapté à vos besoins spécifiques.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center border border-[#E2E8F0] hover:shadow-xl transition">
+        <div class="text-5xl mb-4">⚡</div>
+        <h3 class="text-xl font-semibold text-[#1E3A8A]">Technologies modernes</h3>
+        <p class="text-sm text-[#64748B] mt-2">Nous utilisons les dernières technologies pour des résultats optimaux.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center border border-[#E2E8F0] hover:shadow-xl transition">
+        <div class="text-5xl mb-4">🤝</div>
+        <h3 class="text-xl font-semibold text-[#1E3A8A]">Accompagnement continu</h3>
+        <p class="text-sm text-[#64748B] mt-2">Nous vous accompagnons avant, pendant et après la mise en ligne.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="reveal py-16 px-4 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-sm font-semibold text-[#F59E0B] uppercase tracking-wider">Nos services</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A] mt-2">Des solutions <span class="text-[#F59E0B]">sur mesure</span></h2>
+      <p class="text-[#64748B] mt-4 max-w-2xl mx-auto">Du développement web aux plateformes SaaS, nous créons des outils numériques adaptés à vos besoins.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition border border-[#E2E8F0]">
+        <div class="w-14 h-14 bg-[#1E3A8A]/10 rounded-xl flex items-center justify-center text-3xl mx-auto mb-4">🌐</div>
+        <h3 class="text-xl font-semibold text-[#1E3A8A]">Développement Web</h3>
+        <p class="text-[#64748B] text-sm mt-2">Sites vitrines, applications web complexes et plateformes sur mesure.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition border border-[#E2E8F0]">
+        <div class="w-14 h-14 bg-[#10B981]/10 rounded-xl flex items-center justify-center text-3xl mx-auto mb-4">☁️</div>
+        <h3 class="text-xl font-semibold text-[#1E3A8A]">SaaS & Plateformes</h3>
+        <p class="text-[#64748B] text-sm mt-2">Solutions logicielles en tant que service, évolutives et sécurisées.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition border border-[#E2E8F0]">
+        <div class="w-14 h-14 bg-[#F59E0B]/10 rounded-xl flex items-center justify-center text-3xl mx-auto mb-4">🏢</div>
+        <h3 class="text-xl font-semibold text-[#1E3A8A]">Solutions Métier</h3>
+        <p class="text-[#64748B] text-sm mt-2">Outils internes, ERP, CRM et applications métier personnalisées.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition border border-[#E2E8F0]">
+        <div class="w-14 h-14 bg-[#1E3A8A]/10 rounded-xl flex items-center justify-center text-3xl mx-auto mb-4">🤝</div>
+        <h3 class="text-xl font-semibold text-[#1E3A8A]">Solutions ONG</h3>
+        <p class="text-[#64748B] text-sm mt-2">Plateformes de gestion, collecte de fonds et suivi de projets humanitaires.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition border border-[#E2E8F0]">
+        <div class="w-14 h-14 bg-[#10B981]/10 rounded-xl flex items-center justify-center text-3xl mx-auto mb-4">🛠️</div>
+        <h3 class="text-xl font-semibold text-[#1E3A8A]">Maintenance & Support</h3>
+        <p class="text-[#64748B] text-sm mt-2">Support technique, maintenance évolutive et optimisation continue.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition border border-[#E2E8F0]">
+        <div class="w-14 h-14 bg-[#F59E0B]/10 rounded-xl flex items-center justify-center text-3xl mx-auto mb-4">🎯</div>
+        <h3 class="text-xl font-semibold text-[#1E3A8A]">Sites Vitrines</h3>
+        <p class="text-[#64748B] text-sm mt-2">Sites institutionnels, landing pages et vitrines digitales modernes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Réalisations -->
+  <section class="reveal py-16 px-4 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-sm font-semibold text-[#F59E0B] uppercase tracking-wider">Nos réalisations</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A] mt-2">Des projets qui <span class="text-[#F59E0B]">parlent</span></h2>
+      <p class="text-[#64748B] mt-4 max-w-2xl mx-auto">Découvrez quelques-uns de nos projets récents.</p>
+    </div>
+
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projects.slice(0, 3).map((project) => (
+        <a href={project.link} target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-[#E2E8F0]">
+          <div class="h-48 overflow-hidden bg-gray-100">
+            <img src={project.image} alt={project.title} class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-[#1E3A8A] group-hover:text-[#F59E0B] transition">
+              {project.title}
+              {project.link === "#" && (
+                <span class="inline-block text-xs font-medium bg-[#F59E0B] text-white px-2 py-0.5 rounded-full ml-2 align-middle">
+                  À venir
+                </span>
+              )}
+            </h3>
+            <p class="text-[#64748B] text-sm mt-1 line-clamp-2">{project.description}</p>
+            <span class="inline-block mt-3 text-sm font-medium text-[#1E3A8A] group-hover:text-[#F59E0B] transition">Voir le projet →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="/projects" class="inline-flex items-center gap-2 text-[#1E3A8A] font-medium hover:text-[#F59E0B] transition group">
+        Voir toutes nos réalisations
+        <svg class="w-4 h-4 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Témoignages -->
+  <section class="reveal py-16 px-4 max-w-6xl mx-auto overflow-hidden">
+    <div class="text-center mb-12">
+      <span class="text-sm font-semibold text-[#F59E0B] uppercase tracking-wider">Témoignages</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A] mt-2">
+        Ce qu'ils disent de <span class="text-[#F59E0B]">nous</span>
+      </h2>
+      <p class="text-[#64748B] mt-4 max-w-2xl mx-auto">Des retours de nos clients et partenaires sur nos réalisations.</p>
+    </div>
+
+    <div class="relative overflow-hidden">
+      <div class="flex gap-6 animate-scroll" style="width: max-content;">
+        {[...testimonials, ...testimonials].map((testimonial, index) => (
+          <div key={index} class="bg-white rounded-2xl shadow-lg p-6 border border-[#E2E8F0] w-[280px] sm:w-[320px] flex-shrink-0 hover:shadow-xl transition">
+            <div class="flex items-center gap-4 mb-4">
+              {testimonial.logo ? (
+                <img src={testimonial.logo} alt={testimonial.name} class="w-12 h-12 object-contain rounded-xl bg-white p-1 border border-[#E2E8F0]" />
+              ) : (
+                <div class="w-12 h-12 bg-[#1E3A8A]/10 rounded-full flex items-center justify-center text-xl font-semibold text-[#1E3A8A]">
+                  {testimonial.name.charAt(0)}
+                </div>
+              )}
+              <div>
+                <h4 class="text-sm font-semibold text-[#1E3A8A]">{testimonial.name}</h4>
+                <p class="text-xs text-[#64748B]">{testimonial.role}</p>
+              </div>
+            </div>
+            <div class="flex text-[#F59E0B] text-sm mb-2">
+              {'★'.repeat(testimonial.rating)}{'☆'.repeat(5 - testimonial.rating)}
+            </div>
+            <p class="text-sm text-[#64748B] leading-relaxed">"{testimonial.content}"</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="reveal py-16 px-4 max-w-6xl mx-auto">
+    <div class="bg-gradient-to-br from-[#1E3A8A] to-[#2D4FA8] rounded-3xl p-8 sm:p-12 text-center text-white">
+      <h2 class="text-3xl sm:text-4xl font-bold">Prêt à donner vie à votre projet ?</h2>
+      <p class="text-white/80 text-lg mt-4 max-w-2xl mx-auto">Discutons de vos besoins et trouvons ensemble la solution idéale.</p>
+      <a href="/contact" class="inline-block mt-8 bg-[#F59E0B] text-white font-semibold px-8 py-4 rounded-xl hover:bg-[#D97706] transition-all hover:shadow-xl hover:-translate-y-0.5">
+        Démarrer un projet
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style is:global>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Animation texte en boucle */
+  @keyframes textRotate {
+    0%, 20% { transform: translateY(0); }
+    25%, 45% { transform: translateY(-2.5rem); }
+    50%, 70% { transform: translateY(-5rem); }
+    75%, 95% { transform: translateY(-7.5rem); }
+    100% { transform: translateY(0); }
+  }
+
+  .animate-text-rotate {
+    animation: textRotate 12s ease-in-out infinite;
+  }
+
+  .animate-text-rotate p {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Animation témoignages */
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-scroll {
+    animation: scroll 25s linear infinite;
+  }
+
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+
+  @media (max-width: 640px) {
+    .animate-scroll {
+      animation-duration: 20s;
+    }
+  }
+
+  /* Animation au scroll */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<script>
+  // Animation des statistiques (compteur)
+  function animateCounters() {
+    const counters = document.querySelectorAll('.stat-number');
+    
+    counters.forEach(counter => {
+      const target = parseInt(counter.getAttribute('data-target'));
+      const duration = 2000;
+      const step = target / (duration / 16);
+      let current = 0;
+      
+      const updateCounter = () => {
+        current += step;
+        if (current < target) {
+          counter.textContent = Math.floor(current) + '+';
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.textContent = target + '+';
+        }
+      };
+      
+      updateCounter();
+    });
+  }
+
+  // Animation au scroll
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    
+    reveals.forEach(element => {
+      const windowHeight = window.innerHeight;
+      const elementTop = element.getBoundingClientRect().top;
+      const revealPoint = 150;
+      
+      if (elementTop < windowHeight - revealPoint) {
+        element.classList.add('visible');
+      }
+    });
+  }
+
+  // Lancer les animations
+  document.addEventListener('DOMContentLoaded', () => {
+    animateCounters();
+    revealOnScroll();
+  });
+
+  window.addEventListener('scroll', revealOnScroll);
+</script>

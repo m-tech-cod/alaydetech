@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { posts } from "../../data/posts";
+
+export async function getStaticPaths() {
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+---
+
+<BaseLayout title={post.title} description={post.description}>
+  <section class="py-20 px-4 max-w-4xl mx-auto">
+    <div>
+      <a href="/blog" class="inline-flex items-center gap-2 text-[#1E3A8A] hover:text-[#F59E0B] transition text-sm mb-8">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Retour au blog
+      </a>
+
+      <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border border-[#E2E8F0]">
+        <h1 class="text-3xl md:text-4xl font-bold text-[#1E3A8A]">{post.title}</h1>
+        <div class="flex items-center gap-3 text-sm text-[#64748B] mt-4">
+          <span>{post.date}</span>
+          <span class="w-1 h-1 bg-[#64748B] rounded-full"></span>
+          <span>{post.author}</span>
+        </div>
+        <div class="mt-6 prose prose-lg max-w-none" set:html={post.content} />
+      </article>
+    </div>
+  </section>
+</BaseLayout>

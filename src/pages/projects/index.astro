@@ -1,0 +1,133 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { projects } from "../../data/projects";
+
+// Extraire les catégories uniques
+const categories = ["Tous", ...new Set(projects.map(p => p.category))];
+---
+
+<BaseLayout title="Réalisations" description="Découvrez mes projets web, associatifs, e-commerce et HNG.">
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h1 class="text-3xl md:text-5xl font-bold text-[#1E3A8A]">
+          Mes <span class="text-[#F59E0B]">réalisations</span>
+        </h1>
+        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+          Découvrez les projets que j'ai conçus : associations, e-commerce, blogs, et challenges HNG.
+        </p>
+      </div>
+
+      <!-- Filtres par catégorie -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10">
+        {categories.map((cat) => (
+          <button
+            class="filter-btn px-4 py-2 rounded-full text-sm font-medium border transition-all duration-200"
+            data-filter={cat === "Tous" ? "all" : cat}
+            data-active={cat === "Tous" ? "true" : "false"}
+          >
+            {cat === "Tous" ? "Tous" : cat.charAt(0).toUpperCase() + cat.slice(1)}
+          </button>
+        ))}
+      </div>
+
+      <!-- Grille des projets -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+        {projects.map((project) => (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card group bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            data-category={project.category}
+          >
+            <div class="h-48 overflow-hidden bg-gray-100">
+              <img
+                src={project.image}
+                alt={project.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-5">
+             <h3 class="text-lg font-semibold text-[#1E3A8A] group-hover:text-[#F59E0B] transition">
+                {project.title}
+                {project.link === "#" && (
+                  <span class="inline-block text-xs font-medium bg-[#F59E0B] text-white px-2 py-0.5 rounded-full ml-2 align-middle">
+                    À venir
+                  </span>
+                )}
+              </h3>
+              <p class="text-gray-500 text-sm mt-1 line-clamp-2">{project.description}</p>
+              {project.tech && (
+                <div class="flex flex-wrap gap-2 mt-3">
+                  {project.tech.map((tech) => (
+                    <span class="text-xs font-medium text-[#F59E0B] bg-[#F59E0B]/10 px-3 py-1 rounded-full">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              )}
+              <span class="inline-block mt-3 text-sm font-medium text-primary group-hover:text-accent transition">
+                Voir le projet →
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<!-- Script pour le filtre -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".project-card");
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        // Mettre à jour l'état actif des boutons
+        buttons.forEach((b) => b.dataset.active = "false");
+        btn.dataset.active = "true";
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach((card) => {
+          const category = card.dataset.category;
+          if (filter === "all" || category === filter) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<style is:global>
+  .filter-btn[data-active="true"] {
+    background-color: #1E3A8A;
+    color: white;
+    border-color: #1E3A8A;
+  }
+
+  .filter-btn[data-active="false"] {
+    background-color: transparent;
+    color: #1E3A8A;
+    border-color: #E2E8F0;
+  }
+
+  .filter-btn[data-active="false"]:hover {
+    background-color: #F8FAFC;
+    border-color: #1E3A8A;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { posts } from "../../data/posts";
+---
+
+<BaseLayout title="Blog" description="Articles et réflexions de NovaWeb Labs">
+  <section class="py-20 px-4 max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <span class="text-sm font-semibold text-[#F59E0B] uppercase tracking-wider">Ressources</span>
+      <h1 class="text-4xl md:text-6xl font-bold text-[#1E3A8A] mt-2">
+        Le <span class="text-[#F59E0B]">blog</span>
+      </h1>
+      <p class="text-lg text-[#64748B] mt-4 max-w-2xl mx-auto">
+        Des articles sur le développement web et l'innovation numérique.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {posts.map((post, index) => (
+        <a
+          href={`/blog/${post.slug}`}
+          class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-[#E2E8F0]"
+        >
+          <div class="h-48 bg-gradient-to-br from-[#1E3A8A]/10 to-[#F59E0B]/10 flex items-center justify-center text-5xl">
+            📝
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-3 text-sm text-[#64748B] mb-3">
+              <span>{post.date}</span>
+              <span class="w-1 h-1 bg-[#64748B] rounded-full"></span>
+              <span>{post.author}</span>
+            </div>
+            <h2 class="text-xl font-semibold text-[#1E3A8A] group-hover:text-[#F59E0B] transition">
+              {post.title}
+            </h2>
+            <p class="text-[#64748B] text-sm mt-2 line-clamp-2">{post.description}</p>
+            <span class="inline-block mt-4 text-sm font-medium text-[#1E3A8A] group-hover:text-[#F59E0B] transition">
+              Lire l'article →
+            </span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,100 @@
+---
+const navItems = [
+  { label: "Services", href: "/services" },
+  { label: "Réalisations", href: "/projects" },
+  { label: "À propos", href: "/about" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
+];
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100/50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 md:h-20">
+      
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2 flex-shrink-0 group">
+        <img 
+          src="/images/logo.webp" 
+          alt="Alayde Tech" 
+          class="h-10 w-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-105"
+        />
+      </a>
+
+      <!-- Navigation Desktop -->
+      <nav class="hidden md:flex items-center gap-8">
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            class="text-sm font-medium text-[#64748B] hover:text-[#1E3A8A] transition relative group"
+          >
+            {item.label}
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#1E3A8A] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        ))}
+        <a 
+          href="/contact" 
+          class="bg-[#1E3A8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#1E3A8A]/90 transition-all hover:shadow-lg hover:-translate-y-0.5 duration-300"
+        >
+          Devis gratuit
+        </a>
+      </nav>
+
+      <!-- Menu mobile (hamburger) -->
+      <button 
+        class="md:hidden text-[#1E3A8A] p-2 hover:bg-[#1E3A8A]/5 rounded-lg transition-colors duration-200" 
+        aria-label="Menu" 
+        id="menu-toggle"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Menu mobile -->
+<div id="mobile-menu" class="fixed inset-0 bg-white z-40 pt-20 px-6 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+  <div class="flex flex-col items-center gap-6 text-lg">
+    {navItems.map((item) => (
+      <a 
+        href={item.href} 
+        class="text-[#1E3A8A] hover:text-[#F59E0B] transition-colors duration-200 font-medium"
+        onclick="document.getElementById('mobile-menu').classList.add('translate-x-full'); document.body.style.overflow = '';"
+      >
+        {item.label}
+      </a>
+    ))}
+    <a 
+      href="/contact" 
+      class="bg-[#1E3A8A] text-white font-semibold px-6 py-3 rounded-xl hover:bg-[#1E3A8A]/90 transition w-full text-center"
+      onclick="document.getElementById('mobile-menu').classList.add('translate-x-full'); document.body.style.overflow = '';"
+    >
+      Devis gratuit
+    </a>
+  </div>
+</div>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  let isOpen = false;
+
+  toggle.addEventListener('click', () => {
+    isOpen = !isOpen;
+    mobileMenu.classList.toggle('translate-x-0', isOpen);
+    mobileMenu.classList.toggle('translate-x-full', !isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  // Fermer le menu en cliquant sur un lien
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+      document.body.style.overflow = '';
+      isOpen = false;
+    });
+  });
+</script>
