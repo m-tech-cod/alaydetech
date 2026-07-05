@@ -22,10 +22,11 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
           <h2 class="text-xl font-semibold text-[#1E3A8A] mb-6">Envoyez-nous un message</h2>
 
           <form
-            action="https://formspree.io/f/meenwbvo"
-            method="POST"
-            class="space-y-5"
-          >
+              id="contact-form"
+              action="https://formspree.io/f/meenwbvo"
+              method="POST"
+              class="space-y-5"
+            >
             <div>
               <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
                 Nom complet
@@ -82,11 +83,17 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
             </div>
 
             <button
-              type="submit"
-              class="w-full bg-[#1E3A8A] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#1E3A8A]/90 transition shadow-md hover:shadow-lg"
-            >
-              Envoyer le message
+                id="submit-btn"
+                type="submit"
+                class="w-full bg-[#1E3A8A] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#1E3A8A]/90 transition shadow-md hover:shadow-lg"
+              >
+                Envoyer le message
             </button>
+
+            <p
+              id="form-message"
+              class="hidden rounded-lg p-4 text-sm font-medium"
+            ></p>
           </form>
         </div>
 
@@ -181,3 +188,127 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
 <!-- Font Awesome pour les icônes sociales -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+
+  const form = document.getElementById("contact-form");
+  const message = document.getElementById("form-message");
+
+  const button = document.getElementById("submit-btn");
+  const originalText = button.innerHTML;
+
+  form.addEventListener("submit", async (e) => {
+
+  e.preventDefault();
+  message.classList.add("hidden");
+
+  button.disabled = true;
+  button.innerHTML = `
+  <svg class="animate-spin h-5 w-5 inline-block mr-2"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24">
+
+    <circle
+      class="opacity-25"
+      cx="12"
+      cy="12"
+      r="10"
+      stroke="currentColor"
+      stroke-width="4">
+    </circle>
+
+    <path
+      class="opacity-75"
+      fill="currentColor"
+      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z">
+    </path>
+  </svg>
+
+  Envoi en cours...
+  `;
+  button.classList.add("opacity-70","cursor-not-allowed");
+
+  const data = new FormData(form);
+
+  try {
+
+  const response = await fetch(form.action, {
+  method: "POST",
+  body: data,
+  headers: {
+  Accept: "application/json"
+  }
+  });
+
+  if(response.ok){
+
+    message.className =
+    "mt-4 rounded-lg bg-green-100 text-green-800 p-4 text-sm font-medium";
+
+    message.textContent =
+    "🎉 Merci ! Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.";
+
+    message.classList.remove("hidden");
+
+    form.reset();
+
+    setTimeout(() => {
+      message.classList.add("hidden");
+    }, 6000);
+
+    button.classList.remove("opacity-70","cursor-not-allowed");
+
+    button.innerHTML = "✅ Message envoyé";
+    button.classList.remove("bg-[#1E3A8A]");
+    button.classList.add("bg-green-600");
+
+    setTimeout(() => {
+
+    button.disabled = false;
+    button.innerHTML = originalText;
+
+    button.classList.remove("bg-green-600");
+    button.classList.add("bg-[#1E3A8A]");
+
+  },1000);
+
+  }else{
+    button.disabled = false;
+    button.innerHTML = originalText;
+    button.classList.remove("opacity-70","cursor-not-allowed");
+
+    message.className =
+    "mt-4 rounded-lg bg-red-100 text-red-800 p-4 text-sm font-medium";
+
+    message.textContent =
+    "❌ Une erreur est survenue. Veuillez réessayer.";
+
+    message.classList.remove("hidden");
+
+    setTimeout(() => {
+      message.classList.add("hidden");
+    },6000);
+
+  }
+
+  }catch(error){
+    button.disabled = false;
+    button.innerHTML = originalText;
+    button.classList.remove("opacity-70","cursor-not-allowed");
+
+  message.className =
+  "mt-4 rounded-lg bg-red-100 text-red-800 p-4 text-sm font-medium";
+
+  message.textContent =
+  "❌ Impossible d'envoyer le message. Vérifiez votre connexion.";
+
+  message.classList.remove("hidden");
+
+  }
+
+  });
+
+  });
+</script>
