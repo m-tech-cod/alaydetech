@@ -549,5 +549,48 @@ export const posts = [
   <p><a href="/contact">Besoin d'un audit de sécurité ? →</a></p>
     `,
 },
+
+// ----- ARTICLE AgriLink  -----
+{
+  slug: "agrilink-mise-en-relation-producteurs-consommateurs",
+  title: "AgriLink : la plateforme de mise en relation géolocalisée entre producteurs et consommateurs",
+  description: "Découvrez AgriLink, la solution SaaS qui connecte les producteurs agricoles et les consommateurs locaux grâce à la géolocalisation. Circuits courts, fraîcheur garantie.",
+  date: "2026-07-08",
+  author: "Alayde Tech",
+  tags: ["AgriLink", "Agriculture", "Circuits courts", "Géolocalisation", "SaaS"],
+  image: "/images/agrilink-placeholder.webp",
+  content: `
+    <h1>AgriLink : la révolution de la mise en relation agricole</h1>
+    <p>Le constat est criant dans nos régions : les producteurs agricoles peinent à écouler leurs récoltes à des prix justes, tandis que les consommateurs urbains recherchent des produits frais et locaux, sans savoir où les trouver. Face à ce décalage, la technologie géolocalisée s'impose comme la solution la plus efficace pour recréer du lien. C'est dans cette optique qu'<strong>Alayde Tech</strong> lance <strong>AgriLink</strong>, une plateforme SaaS innovante de mise en relation directe.</p>
+    <h2>Le problème des intermédiaires et du gaspillage</h2>
+    <p>Aujourd'hui, près de 40% des denrées périssables sont perdues entre la récolte et l'assiette, faute de logistique et de visibilité. Les marchés traditionnels, bien que vivants, manquent de transparence sur l'origine et les prix. Les producteurs, souvent isolés géographiquement, n'ont pas d'outils numériques adaptés à leurs réalités.</p>
+    <h2>Notre solution : une plateforme 100% géolocalisée</h2>
+    <p>AgriLink utilise la géolocalisation pour cartographier en temps réel les producteurs et leurs récoltes disponibles. Le consommateur, qu'il soit à Cotonou, Parakou ou Natitingou, visualise instantanément les agriculteurs dans un rayon de 10, 20 ou 50 km.</p>
+    <h3>Comment ça fonctionne ?</h3>
+    <ul>
+      <li><strong>Pour le producteur</strong> : Il s'inscrit, renseigne ses coordonnées GPS, ses productions (maïs, tomates, ananas, etc.), les quantités disponibles et les périodes de récolte. Il peut <strong>publier ses produits</strong> directement sur la plateforme.</li>
+      <li><strong>Pour le consommateur</strong> : Il recherche un produit, filtre par distance et par type, visualise les offres disponibles et <strong>contacte le producteur via WhatsApp</strong> en un clic pour convenir des modalités.</li>
+      <li><strong>Géolocalisation active</strong> : Les itinéraires sont suggérés automatiquement, réduisant les coûts de transport et l'empreinte carbone.</li>
+    </ul>
+    <h2>Les avantages pour les producteurs agricoles</h2>
+    <ul>
+      <li>Valorisation du travail : vente sans intermédiaire, marges boostées de 30 à 50%.</li>
+      <li>Visibilité accrue : sortir de l'anonymat et fidéliser une clientèle locale.</li>
+      <li>Planification des cultures : anticiper la demande grâce aux données historiques.</li>
+    </ul>
+    <h2>Les avantages pour les consommateurs</h2>
+    <ul>
+      <li>Traçabilité et fraîcheur : savoir exactement d'où provient le produit et quand il a été cueilli.</li>
+      <li>Prix compétitifs : acheter directement à la source.</li>
+      <li>Soutien à l'économie locale : chaque achat est un acte citoyen.</li>
+      <li>Contact simplifié : <strong>un bouton WhatsApp</strong> pour échanger directement avec le producteur.</li>
+    </ul>
+    <h2>Une solution accessible et sécurisée</h2>
+    <p>AgriLink est conçue pour être simple d'utilisation, même sur des connexions mobiles limitées. La sécurité des données et des échanges est une priorité.</p>
+    <h2>Conclusion</h2>
+    <p>AgriLink verra le jour très prochainement. Découvrez ce projet dans nos réalisations et restez connectés pour le lancement.</p>
+    <p><a href="/projects">Découvrir AgriLink dans nos réalisations →</a></p>
+  `
+}
 ];
 

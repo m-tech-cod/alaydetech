@@ -2,11 +2,10 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { projects } from "../../data/projects";
 
-// Extraire les catégories uniques
 const categories = ["Tous", ...new Set(projects.map(p => p.category))];
 ---
 
-<BaseLayout title="Réalisations" description="Découvrez mes projets web, associatifs, e-commerce et HNG.">
+<BaseLayout title="Réalisations" description="Découvrez nos projets web, associatifs, e-commerce et SaaS.">
   <section class="py-20 px-4">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
@@ -18,7 +17,6 @@ const categories = ["Tous", ...new Set(projects.map(p => p.category))];
         </p>
       </div>
 
-      <!-- Filtres par catégorie -->
       <div class="flex flex-wrap justify-center gap-2 mb-10">
         {categories.map((cat) => (
           <button
@@ -31,26 +29,26 @@ const categories = ["Tous", ...new Set(projects.map(p => p.category))];
         ))}
       </div>
 
-      <!-- Grille des projets -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <a
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            class="project-card group bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            class={`project-card group bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in-up animate-delay-${(index % 3) + 1}`}
             data-category={project.category}
           >
-            <div class="h-48 overflow-hidden bg-gray-100">
+            <div class="h-48 overflow-hidden bg-gray-100 relative">
               <img
                 src={project.image}
                 alt={project.title}
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                 loading="lazy"
               />
+              <div class="absolute inset-0 bg-[#1E3A8A]/0 group-hover:bg-[#1E3A8A]/20 transition duration-500"></div>
             </div>
             <div class="p-5">
-             <h3 class="text-lg font-semibold text-[#1E3A8A] group-hover:text-[#F59E0B] transition">
+              <h3 class="text-lg font-semibold text-[#1E3A8A] group-hover:text-[#F59E0B] transition">
                 {project.title}
                 {project.link === "#" && (
                   <span class="inline-block text-xs font-medium bg-[#F59E0B] text-white px-2 py-0.5 rounded-full ml-2 align-middle">
@@ -79,7 +77,6 @@ const categories = ["Tous", ...new Set(projects.map(p => p.category))];
   </section>
 </BaseLayout>
 
-<!-- Script pour le filtre -->
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".filter-btn");
@@ -87,7 +84,6 @@ const categories = ["Tous", ...new Set(projects.map(p => p.category))];
 
     buttons.forEach((btn) => {
       btn.addEventListener("click", () => {
-        // Mettre à jour l'état actif des boutons
         buttons.forEach((b) => b.dataset.active = "false");
         btn.dataset.active = "true";
 
@@ -130,4 +126,26 @@ const categories = ["Tous", ...new Set(projects.map(p => p.category))];
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-delay-1 { animation-delay: 0.1s; }
+  .animate-delay-2 { animation-delay: 0.2s; }
+  .animate-delay-3 { animation-delay: 0.3s; }
+  .animate-delay-4 { animation-delay: 0.4s; }
+  .animate-delay-5 { animation-delay: 0.5s; }
 </style>

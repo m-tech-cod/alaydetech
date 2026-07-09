@@ -226,3 +226,36 @@ iframe {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Surcharge des liens dans typography */
+.prose a {
+  color: #F59E0B !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.prose a:hover {
+  border-bottom-color: #F59E0B;
+  color: #D97706 !important; /* Orange foncé au survol */
+}
+
+/* Pour les liens externes */
+.prose a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.8em;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.prose a[target="_blank"]:hover::after {
+  transform: translate(2px, -2px);
+}
+
+/* Accessibilité */
+.prose a:focus-visible {
+  outline: 2px solid #F59E0B;
+  outline-offset: 2px;
+  border-radius: 2px;
+}

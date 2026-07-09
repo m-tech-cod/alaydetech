@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { posts } from "../../data/posts";
 ---
 
-<BaseLayout title="Blog" description="Articles et réflexions de NovaWeb Labs">
+<BaseLayout title="Blog" description="Articles et réflexions d'Alayde Tech sur le développement web et l'innovation numérique.">
   <section class="py-20 px-4 max-w-6xl mx-auto">
     <div class="text-center mb-16">
       <span class="text-sm font-semibold text-[#F59E0B] uppercase tracking-wider">Ressources</span>
@@ -19,7 +19,7 @@ import { posts } from "../../data/posts";
       {posts.map((post, index) => (
         <a
           href={`/blog/${post.slug}`}
-          class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-[#E2E8F0]"
+          class={`group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-[#E2E8F0] animate-fade-in-up animate-delay-${(index % 3) + 1}`}
         >
           <div class="h-48 bg-gradient-to-br from-[#1E3A8A]/10 to-[#F59E0B]/10 flex items-center justify-center text-5xl">
             📝
@@ -43,3 +43,34 @@ import { posts } from "../../data/posts";
     </div>
   </section>
 </BaseLayout>
+
+<style is:global>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-delay-1 { animation-delay: 0.1s; }
+  .animate-delay-2 { animation-delay: 0.2s; }
+  .animate-delay-3 { animation-delay: 0.3s; }
+  .animate-delay-4 { animation-delay: 0.4s; }
+  .animate-delay-5 { animation-delay: 0.5s; }
+</style>

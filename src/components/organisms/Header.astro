@@ -88,7 +88,6 @@ const navItems = [
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 
-  // Fermer le menu en cliquant sur un lien
   document.querySelectorAll('#mobile-menu a').forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.add('translate-x-full');

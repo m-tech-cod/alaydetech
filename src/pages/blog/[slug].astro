@@ -29,7 +29,9 @@ const { post } = Astro.props;
           <span class="w-1 h-1 bg-[#64748B] rounded-full"></span>
           <span>{post.author}</span>
         </div>
-        <div class="mt-6 prose prose-lg max-w-none" set:html={post.content} />
+        <article class="prose prose-lg max-w-none">
+          <div set:html={post.content} />
+        </article>
       </article>
     </div>
   </section>
