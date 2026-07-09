@@ -32,7 +32,7 @@ export const posts = [
 
     <p>Eventvivo propose une version gratuite pour vous permettre de tester la plateforme. Créez votre événement dès maintenant et découvrez une nouvelle façon d'organiser vos moments importants.</p>
 
-    <p><strong>Eventvivo</strong> — Plateforme événementielle en cours de développement. Restez connectés ! 🚀</p>
+    <p><strong>Eventvivo</strong> — Plateforme événementielle en cours de développement. Restez connectés !</p>
 
     <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions SaaS pour une gestion d'événements simplifiée.</em></p>
     `,
@@ -83,32 +83,32 @@ export const posts = [
     tags: ["Association humanitaire", "Site web ONG", "ICMDA", "Visibilité", "Crédibilité"],
     image: "/images/icmda.webp",
     content: `
-  <h1>Pourquoi un site web est essentiel pour une association humanitaire</h1>
+    <h1>Pourquoi un site web est essentiel pour une association humanitaire</h1>
 
-  <p>Dans un monde de plus en plus connecté, la présence en ligne est devenue indispensable pour les associations humanitaires. Un site web bien conçu renforce la crédibilité, attire les donateurs et facilite la communication.</p>
+    <p>Dans un monde de plus en plus connecté, la présence en ligne est devenue indispensable pour les associations humanitaires. Un site web bien conçu renforce la crédibilité, attire les donateurs et facilite la communication.</p>
 
-  <h2>ICMDA : un exemple de réussite</h2>
+    <h2>ICMDA : un exemple de réussite</h2>
 
-  <p>ICMDA (<em>Ideas For Changing the Mentality of Development Actors</em>) est une association engagée dans l'action humanitaire. Le site web conçu par Alayde Tech leur a permis de :</p>
+    <p>ICMDA (<em>Ideas For Changing the Mentality of Development Actors</em>) est une association engagée dans l'action humanitaire. Le site web conçu par Alayde Tech leur a permis de :</p>
 
-  <ul>
-    <li><strong>Valoriser leurs projets</strong> de terrain et initiatives solidaires.</li>
-    <li><strong>Mobiliser des partenaires</strong> et des donateurs.</li>
-    <li><strong>Renforcer leur crédibilité</strong> auprès des institutions et du public.</li>
-  </ul>
+    <ul>
+      <li><strong>Valoriser leurs projets</strong> de terrain et initiatives solidaires.</li>
+      <li><strong>Mobiliser des partenaires</strong> et des donateurs.</li>
+      <li><strong>Renforcer leur crédibilité</strong> auprès des institutions et du public.</li>
+    </ul>
 
-  <h2>Les avantages d'un site web pour une ONG</h2>
+    <h2>Les avantages d'un site web pour une ONG</h2>
 
-  <ul>
-    <li>Visibilité internationale</li>
-    <li>Crédibilité et professionnalisme</li>
-    <li>Facilité de collecte de fonds</li>
-    <li>Communication transparente avec les parties prenantes</li>
-  </ul>
+    <ul>
+      <li>Visibilité internationale</li>
+      <li>Crédibilité et professionnalisme</li>
+      <li>Facilité de collecte de fonds</li>
+      <li>Communication transparente avec les parties prenantes</li>
+    </ul>
 
-  <p><a href="https://icmda.vercel.app/" target="_blank">Découvrir le site d'ICMDA →</a></p>
+    <p><a href="https://icmda.vercel.app/" target="_blank">Découvrir le site d'ICMDA →</a></p>
 
-  <p><em>Écrit par <strong>Alayde Tech</strong> — Sites web pour associations humanitaires.</em></p>
+    <p><em>Écrit par <strong>Alayde Tech</strong> — Sites web pour associations humanitaires.</em></p>
       `,
   },
 
