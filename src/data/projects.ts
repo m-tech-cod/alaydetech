@@ -5,15 +5,13 @@ export interface Project {
   title: string;
   description: string;
   category: "association" | "ecommerce" | "blog" | "hng" | "portfolio" | "saas";
-  tech?: string[];
   image: string;
   link: string;
   featured?: boolean;
 }
 
 export const projects: Project[] = [
-
-   {
+  {
     id: 0,
     title: "Eventvivo",
     description: "Invitations numériques, RSVP, QR Codes et suivi des invités en temps réel. Créez votre événement gratuitement (mariage, anniversaire, baptême, dot, etc.).",
@@ -22,17 +20,15 @@ export const projects: Project[] = [
     link: "#",
     featured: true,
   },
-
   {
-    id: 1, // ou un autre ID unique
+    id: 1,
     title: "AgriLink",
-    description: "Plateforme de mise en relation géolocalisée entre producteurs agricoles et consommateurs. Circuits courts, fraîcheur garantie.",
+    description: "Plateforme de mise en relation géolocalisée entre producteurs et consommateurs. Publiez vos produits, trouvez des circuits courts et contactez directement via WhatsApp.",
     category: "saas",
-    image: "/images/agrilink.webp", // Placeholder, vous remplacerez plus tard
-    link: "#", // Reste "#" jusqu'au lancement
-    featured: true, // Pour qu'il apparaisse en priorité
+    image: "/images/agrilink-placeholder.webp",
+    link: "#",
+    featured: true,
   },
-  // ----- ASSOCIATIONS -----
   {
     id: 2,
     title: "Communauté ProLife",
@@ -75,8 +71,6 @@ export const projects: Project[] = [
     image: "/images/icmda.webp",
     link: "https://icmda.vercel.app/",
   },
-
-  // ----- E-COMMERCE -----
   {
     id: 7,
     title: "Hawa Sweet House",
@@ -85,8 +79,6 @@ export const projects: Project[] = [
     image: "/images/sweethouse.webp",
     link: "https://hawasweethouse-site.vercel.app/",
   },
-
-  // ----- BLOG -----
   {
     id: 8,
     title: "Ô Bons Rappels",
@@ -95,41 +87,35 @@ export const projects: Project[] = [
     image: "/images/bons-rappels.webp",
     link: "https://m-tech-cod.github.io/bons-rappels/",
   },
-
-  // ----- HNG PROJECTS -----
   {
     id: 9,
     title: "Task Management Card",
     description: "Composant de gestion de tâches avec interface SaaS moderne, responsive et accessible.",
     category: "hng",
-    tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/todo.webp",
     link: "https://todo-card-hng-6zg2.vercel.app/",
   },
   {
     id: 10,
     title: "Real-Time Analytics Dashboard",
-    description: "Tableau de bord de visualisation de données en temps réel avec Vue.js, Pinia et ECharts.",
+    description: "Tableau de bord de visualisation de données en temps réel.",
     category: "hng",
-    tech: ["Vue.js", "TypeScript", "ECharts"],
     image: "/images/realtime-dashboard.webp",
     link: "https://realtime-dashboard-873a.vercel.app/",
   },
   {
     id: 11,
     title: "Invoice Management App",
-    description: "Application de gestion de factures (CRUD) avec React, filtrage par statut et persistance des données.",
+    description: "Application de gestion de factures",
     category: "hng",
-    tech: ["React", "TypeScript", "Tailwind"],
     image: "/images/gestion-facture.webp",
     link: "https://invoice-app-nine-mocha.vercel.app/",
   },
   {
     id: 12,
     title: "Portfolio SvelteKit",
-    description: "Portfolio développeur moderne et interactif avec SvelteKit, TypeScript et animations.",
-    category: "portfolio",
-    tech: ["SvelteKit", "TypeScript", "Tailwind"],
+    description: "Portfolio développeur moderne.",
+    category: "hng",
     image: "/images/svelte.webp",
     link: "https://svelte-three.vercel.app/",
   },
@@ -138,16 +124,14 @@ export const projects: Project[] = [
     title: "Habit Tracker PWA",
     description: "Application progressive de suivi d'habitudes, performante et installable.",
     category: "hng",
-    tech: ["Next.js", "TypeScript", "Tailwind"],
     image: "/images/habit-tracker.webp",
     link: "https://habit-tracker-26fm.vercel.app/",
   },
   {
     id: 14,
     title: "WhisperBox Messenger",
-    description: "Application de messagerie sécurisée avec chiffrement de bout en bout (React + Web Crypto API).",
+    description: "Application de messagerie sécurisée avec chiffrement de bout en bout.",
     category: "hng",
-    tech: ["React", "Web Crypto API", "Tailwind"],
     image: "/images/messagerie.webp",
     link: "https://m-tech-cod-e2ee-messenger-zere.vercel.app/",
   },
