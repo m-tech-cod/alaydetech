@@ -47,16 +47,9 @@ export const projects: Project[] = [
     link: "https://marathon-commercial-de-cotonou.vercel.app/",
     featured: true,
   },
+
   {
     id: 4,
-    title: "Association Ya Tchegbo",
-    description: "Site associatif mettant en valeur les actions solidaires et facilitant l'engagement.",
-    category: "association",
-    image: "/images/yatchegbo.webp",
-    link: "https://yatchegbo.vercel.app/",
-  },
-  {
-    id: 5,
     title: "Burkina Humanitaire",
     description: "Site web moderne pour une association engagée dans l'aide aux enfants et personnes démunies.",
     category: "association",
@@ -64,7 +57,7 @@ export const projects: Project[] = [
     link: "https://burkinahumanitaire.vercel.app/",
   },
   {
-    id: 6,
+    id: 5,
     title: "ICMDA",
     description: "Site pour une association engagée dans l'action humanitaire, valorisant leurs projets de terrain.",
     category: "association",
@@ -72,7 +65,7 @@ export const projects: Project[] = [
     link: "https://icmda.vercel.app/",
   },
   {
-    id: 7,
+    id: 6,
     title: "Hawa Sweet House",
     description: "Site e-commerce pour une pâtisserie artisanale avec commande via WhatsApp.",
     category: "ecommerce",
@@ -80,7 +73,7 @@ export const projects: Project[] = [
     link: "https://hawasweethouse-site.vercel.app/",
   },
   {
-    id: 8,
+    id: 7,
     title: "Ô Bons Rappels",
     description: "Blog de rappels spirituels, conseils inspirants et enseignements accessibles.",
     category: "blog",
@@ -88,7 +81,7 @@ export const projects: Project[] = [
     link: "https://m-tech-cod.github.io/bons-rappels/",
   },
   {
-    id: 9,
+    id: 8,
     title: "Task Management Card",
     description: "Composant de gestion de tâches avec interface SaaS moderne, responsive et accessible.",
     category: "hng",
@@ -96,7 +89,7 @@ export const projects: Project[] = [
     link: "https://todo-card-hng-6zg2.vercel.app/",
   },
   {
-    id: 10,
+    id: 9,
     title: "Real-Time Analytics Dashboard",
     description: "Tableau de bord de visualisation de données en temps réel.",
     category: "hng",
@@ -104,7 +97,7 @@ export const projects: Project[] = [
     link: "https://realtime-dashboard-873a.vercel.app/",
   },
   {
-    id: 11,
+    id: 10,
     title: "Invoice Management App",
     description: "Application de gestion de factures",
     category: "hng",
@@ -112,7 +105,7 @@ export const projects: Project[] = [
     link: "https://invoice-app-nine-mocha.vercel.app/",
   },
   {
-    id: 12,
+    id: 11,
     title: "Portfolio SvelteKit",
     description: "Portfolio développeur moderne.",
     category: "hng",
@@ -120,7 +113,7 @@ export const projects: Project[] = [
     link: "https://svelte-three.vercel.app/",
   },
   {
-    id: 13,
+    id: 12,
     title: "Habit Tracker PWA",
     description: "Application progressive de suivi d'habitudes, performante et installable.",
     category: "hng",
@@ -128,7 +121,7 @@ export const projects: Project[] = [
     link: "https://habit-tracker-26fm.vercel.app/",
   },
   {
-    id: 14,
+    id: 13,
     title: "WhisperBox Messenger",
     description: "Application de messagerie sécurisée avec chiffrement de bout en bout.",
     category: "hng",
