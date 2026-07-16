@@ -47,7 +47,6 @@ export const projects: Project[] = [
     link: "https://marathon-commercial-de-cotonou.vercel.app/",
     featured: true,
   },
-
   {
     id: 4,
     title: "Burkina Humanitaire",
@@ -87,6 +86,14 @@ export const projects: Project[] = [
     category: "hng",
     image: "/images/todo.webp",
     link: "https://todo-card-hng-6zg2.vercel.app/",
+  },
+  {
+    id: 9,
+    title: "Flowbrand",
+    description: "Collaboration technique et design sur le projet Flowbrand.",
+    category: "hng",
+    image: "/images/flowbrand.webp",
+    link: "https://flowbrand-ui.vercel.app",
   },
   {
     id: 9,
