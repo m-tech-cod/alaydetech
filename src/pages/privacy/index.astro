@@ -3,14 +3,29 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Politique de confidentialité" description="Politique de confidentialité d'Alayde Tech.">
-  <section class="py-20 px-4 max-w-4xl mx-auto">
-    <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold text-[#1E3A8A]">
+  <!-- Hero avec image de fond et zoom -->
+  <section class="relative py-20 px-4 overflow-hidden min-h-[50vh] flex items-center justify-center">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <div class="w-full h-full animate-zoom">
+        <img 
+          src="/images/fond.webp" 
+          alt="Alayde Tech - Politique de confidentialité" 
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-br from-[#1E3A8A]/70 via-[#1E3A8A]/50 to-[#F59E0B]/30"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight drop-shadow-lg">
         Politique de <span class="text-[#F59E0B]">confidentialité</span>
       </h1>
       <div class="w-16 h-1 bg-[#F59E0B] mx-auto mt-4 rounded"></div>
     </div>
+  </section>
 
+  <!-- Contenu de la politique de confidentialité -->
+  <section class="py-16 px-4 max-w-4xl mx-auto">
     <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border border-[#E2E8F0] space-y-6">
       <div>
         <p class="text-[#64748B]">
@@ -81,3 +96,16 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     </div>
   </section>
 </BaseLayout>
+
+<style is:global>
+  /* Animation de zoom pour l'image de fond */
+  @keyframes zoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
+
+  .animate-zoom {
+    animation: zoom 18s ease-in-out infinite alternate;
+  }
+</style>

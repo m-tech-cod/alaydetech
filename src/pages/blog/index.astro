@@ -4,17 +4,36 @@ import { posts } from "../../data/posts";
 ---
 
 <BaseLayout title="Blog" description="Articles et réflexions d'Alayde Tech sur le développement web et l'innovation numérique.">
-  <section class="py-20 px-4 max-w-6xl mx-auto">
-    <div class="text-center mb-16">
-      <span class="text-sm font-semibold text-[#F59E0B] uppercase tracking-wider">Ressources</span>
-      <h1 class="text-4xl md:text-6xl font-bold text-[#1E3A8A] mt-2">
+  <!-- Hero Blog avec image de fond -->
+  <section class="relative py-20 px-4 overflow-hidden min-h-[50vh] flex items-center justify-center">
+    <!-- Conteneur de l'image avec zoom -->
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <div class="w-full h-full animate-zoom">
+        <img 
+          src="/images/fond.webp" 
+          alt="Alayde Tech - Blog et ressources" 
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-br from-[#1E3A8A]/70 via-[#1E3A8A]/50 to-[#F59E0B]/30"></div>
+    </div>
+
+    <!-- Contenu Hero -->
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      <span class="inline-block bg-[#F59E0B]/20 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm">
+        Ressources
+      </span>
+      <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight drop-shadow-lg">
         Le <span class="text-[#F59E0B]">blog</span>
       </h1>
-      <p class="text-lg text-[#64748B] mt-4 max-w-2xl mx-auto">
+      <p class="text-lg text-white/90 mt-4 max-w-2xl mx-auto drop-shadow-md">
         Des articles sur le développement web et l'innovation numérique.
       </p>
     </div>
+  </section>
 
+  <!-- Grille des articles -->
+  <section class="py-16 px-4 max-w-6xl mx-auto">
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {posts.map((post, index) => (
         <a
@@ -73,4 +92,15 @@ import { posts } from "../../data/posts";
   .animate-delay-3 { animation-delay: 0.3s; }
   .animate-delay-4 { animation-delay: 0.4s; }
   .animate-delay-5 { animation-delay: 0.5s; }
+
+  /* Animation de zoom - appliquée sur le conteneur */
+  @keyframes zoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
+
+  .animate-zoom {
+    animation: zoom 18s ease-in-out infinite alternate;
+  }
 </style>

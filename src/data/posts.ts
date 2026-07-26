@@ -176,10 +176,8 @@ export const posts = [
 
   <p>Un site web permet de toucher un large public, de sensibiliser sur les enjeux sociaux et de mobiliser des ressources. Il est également un outil de transparence et de redevabilité.</p>
 
-  <p><a href="https://yatchegbo.vercel.app/" target="_blank">Découvrir le site de Ya Tchégbo →</a></p>
-
   <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions web pour associations de solidarité.</em></p>
-      `,
+    `,
   },
 
   // ----- ARTICLE 6 : Pourquoi un site web pour une association ? -----

@@ -6,64 +6,77 @@ const categories = ["Tous", ...new Set(projects.map(p => p.category))];
 ---
 
 <BaseLayout title="Réalisations" description="Découvrez nos projets web, associatifs, e-commerce et SaaS.">
-  <section class="py-20 px-4">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-12">
-        <h1 class="text-3xl md:text-5xl font-bold text-[#1E3A8A]">
-          Mes <span class="text-[#F59E0B]">réalisations</span>
-        </h1>
-        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
-          Découvrez les projets que j'ai conçus : associations, e-commerce, blogs, et challenges HNG.
-        </p>
+  <!-- Hero avec image de fond et zoom -->
+  <section class="relative py-20 px-4 overflow-hidden min-h-[50vh] flex items-center justify-center">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <div class="w-full h-full animate-zoom">
+        <img 
+          src="/images/fond.webp" 
+          alt="Alayde Tech - Nos réalisations" 
+          class="w-full h-full object-cover"
+        />
       </div>
+      <div class="absolute inset-0 bg-gradient-to-br from-[#1E3A8A]/70 via-[#1E3A8A]/50 to-[#F59E0B]/30"></div>
+    </div>
 
-      <div class="flex flex-wrap justify-center gap-2 mb-10">
-        {categories.map((cat) => (
-          <button
-            class="filter-btn px-4 py-2 rounded-full text-sm font-medium border transition-all duration-200"
-            data-filter={cat === "Tous" ? "all" : cat}
-            data-active={cat === "Tous" ? "true" : "false"}
-          >
-            {cat === "Tous" ? "Tous" : cat.charAt(0).toUpperCase() + cat.slice(1)}
-          </button>
-        ))}
-      </div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight drop-shadow-lg">
+        Mes <span class="text-[#F59E0B]">réalisations</span>
+      </h1>
+      <p class="text-lg text-white/90 mt-4 max-w-2xl mx-auto drop-shadow-md">
+        Découvrez les projets que j'ai conçus : associations, e-commerce, blogs, et challenges HNG.
+      </p>
+    </div>
+  </section>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
-        {projects.map((project, index) => (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            class={`project-card group bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in-up animate-delay-${(index % 3) + 1}`}
-            data-category={project.category}
-          >
-            <div class="h-48 overflow-hidden bg-gray-100 relative">
-              <img
-                src={project.image}
-                alt={project.title}
-                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                loading="lazy"
-              />
-              <div class="absolute inset-0 bg-[#1E3A8A]/0 group-hover:bg-[#1E3A8A]/20 transition duration-500"></div>
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-semibold text-[#1E3A8A] group-hover:text-[#F59E0B] transition">
-                {project.title}
-                {project.link === "#" && (
-                  <span class="inline-block text-xs font-medium bg-[#F59E0B] text-white px-2 py-0.5 rounded-full ml-2 align-middle">
-                    À venir
-                  </span>
-                )}
-              </h3>
-              <p class="text-gray-500 text-sm mt-1 line-clamp-2">{project.description}</p>
-              <span class="inline-block mt-3 text-sm font-medium text-primary group-hover:text-accent transition">
-                Voir le projet →
-              </span>
-            </div>
-          </a>
-        ))}
-      </div>
+  <!-- Filtres et grille des projets -->
+  <section class="py-16 px-4 max-w-6xl mx-auto">
+    <div class="flex flex-wrap justify-center gap-2 mb-10">
+      {categories.map((cat) => (
+        <button
+          class="filter-btn px-4 py-2 rounded-full text-sm font-medium border transition-all duration-200"
+          data-filter={cat === "Tous" ? "all" : cat}
+          data-active={cat === "Tous" ? "true" : "false"}
+        >
+          {cat === "Tous" ? "Tous" : cat.charAt(0).toUpperCase() + cat.slice(1)}
+        </button>
+      ))}
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+      {projects.map((project, index) => (
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          class={`project-card group bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in-up animate-delay-${(index % 3) + 1}`}
+          data-category={project.category}
+        >
+          <div class="h-48 overflow-hidden bg-gray-100 relative">
+            <img
+              src={project.image}
+              alt={project.title}
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-[#1E3A8A]/0 group-hover:bg-[#1E3A8A]/20 transition duration-500"></div>
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-[#1E3A8A] group-hover:text-[#F59E0B] transition">
+              {project.title}
+              {project.link === "#" && (
+                <span class="inline-block text-xs font-medium bg-[#F59E0B] text-white px-2 py-0.5 rounded-full ml-2 align-middle">
+                  À venir
+                </span>
+              )}
+            </h3>
+            <p class="text-gray-500 text-sm mt-1 line-clamp-2">{project.description}</p>
+            <span class="inline-block mt-3 text-sm font-medium text-primary group-hover:text-accent transition">
+              Voir le projet →
+            </span>
+          </div>
+        </a>
+      ))}
     </div>
   </section>
 </BaseLayout>
@@ -118,6 +131,7 @@ const categories = ["Tous", ...new Set(projects.map(p => p.category))];
     overflow: hidden;
   }
 
+  /* Animation d'apparition des cartes */
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -139,4 +153,15 @@ const categories = ["Tous", ...new Set(projects.map(p => p.category))];
   .animate-delay-3 { animation-delay: 0.3s; }
   .animate-delay-4 { animation-delay: 0.4s; }
   .animate-delay-5 { animation-delay: 0.5s; }
+
+  /* Animation de zoom pour l'image de fond */
+  @keyframes zoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
+
+  .animate-zoom {
+    animation: zoom 18s ease-in-out infinite alternate;
+  }
 </style>

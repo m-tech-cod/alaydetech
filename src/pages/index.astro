@@ -7,48 +7,58 @@ import { projects } from "../data/projects";
 <BaseLayout title="Accueil" description="Alayde Tech conçoit des applications web, plateformes SaaS et solutions numériques sur mesure.">
   <!-- Hero Section -->
   <section class="relative min-h-[85vh] flex items-center justify-center px-4 overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-[#1E3A8A]/5 via-transparent to-[#F59E0B]/5"></div>
-    <div class="relative max-w-4xl mx-auto text-center">
-      <span class="inline-block bg-[#F59E0B]/10 text-[#F59E0B] text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+    <!-- Image de fond avec zoom -->
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <img 
+        src="/images/fond.webp" 
+        alt="Alayde Tech - Innovation numérique" 
+        class="w-full h-full object-cover animate-zoom"
+      />
+      <div class="absolute inset-0 bg-gradient-to-br from-[#1E3A8A]/70 via-[#1E3A8A]/40 to-[#F59E0B]/30"></div>
+    </div>
+
+    <!-- Contenu Hero (relatif pour être au-dessus) -->
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      <span class="inline-block bg-[#F59E0B]/20 text-white text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm">
         ✦ Agence de développement logiciel
       </span>
       
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1E3A8A] leading-tight">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
         Des logiciels qui<br />
         <span class="text-[#F59E0B] typewriter" data-words='["changent la donne", "accélèrent", "simplifient", "connectent"]'></span>
       </h1>
 
-      <p class="mt-6 text-base sm:text-lg text-[#64748B] max-w-2xl mx-auto">
+      <p class="mt-6 text-base sm:text-lg text-white/90 max-w-2xl mx-auto drop-shadow-md">
         Alayde Tech conçoit des applications web et des plateformes SaaS sur mesure.
       </p>
 
       <div class="mt-10 flex flex-wrap gap-4 justify-center">
-        <a href="/contact" class="bg-[#1E3A8A] text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-[#1E3A8A]/90 transition-all hover:shadow-xl hover:-translate-y-0.5 text-sm sm:text-base">
+        <a href="/contact" class="bg-[#F59E0B] text-[#1E3A8A] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-[#D97706] transition-all hover:shadow-xl hover:-translate-y-0.5 text-sm sm:text-base">
           Discuter de votre projet
         </a>
-        <a href="/projects" class="border-2 border-[#1E3A8A] text-[#1E3A8A] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-[#1E3A8A]/5 transition-all hover:shadow-xl hover:-translate-y-0.5 text-sm sm:text-base">
+        <a href="/projects" class="border-2 border-white text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-white/10 transition-all hover:shadow-xl hover:-translate-y-0.5 text-sm sm:text-base backdrop-blur-sm">
           Voir nos réalisations
         </a>
       </div>
 
       <div class="mt-12 grid grid-cols-3 gap-4 max-w-lg mx-auto">
         <div>
-          <p class="text-2xl sm:text-3xl font-bold text-[#1E3A8A]">
+          <p class="text-2xl sm:text-3xl font-bold text-white drop-shadow-md">
             <span class="stat-number" data-target="10">0+</span>
           </p>
-          <p class="text-xs text-[#64748B]">Projets</p>
+          <p class="text-xs text-white/80">Projets</p>
         </div>
         <div>
-          <p class="text-2xl sm:text-3xl font-bold text-[#1E3A8A]">
+          <p class="text-2xl sm:text-3xl font-bold text-white drop-shadow-md">
             <span class="stat-number" data-target="5">0+</span>
           </p>
-          <p class="text-xs text-[#64748B]">ONG</p>
+          <p class="text-xs text-white/80">ONG</p>
         </div>
         <div>
-          <p class="text-2xl sm:text-3xl font-bold text-[#1E3A8A]">
+          <p class="text-2xl sm:text-3xl font-bold text-white drop-shadow-md">
             <span class="stat-number" data-target="100">0+</span>
           </p>
-          <p class="text-xs text-[#64748B]">Satisfaction</p>
+          <p class="text-xs text-white/80">Satisfaction</p>
         </div>
       </div>
     </div>
@@ -206,14 +216,27 @@ import { projects } from "../data/projects";
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- CTA avec image de fond et zoom -->
   <section class="reveal py-16 px-4 max-w-6xl mx-auto">
-    <div class="bg-gradient-to-br from-[#1E3A8A] to-[#2D4FA8] rounded-3xl p-8 sm:p-12 text-center text-white">
-      <h2 class="text-3xl sm:text-4xl font-bold">Prêt à donner vie à votre projet ?</h2>
-      <p class="text-white/80 text-lg mt-4 max-w-2xl mx-auto">Discutons de vos besoins et trouvons ensemble la solution idéale.</p>
-      <a href="/contact" class="inline-block mt-8 bg-[#F59E0B] text-white font-semibold px-8 py-4 rounded-xl hover:bg-[#D97706] transition-all hover:shadow-xl hover:-translate-y-0.5">
-        Démarrer un projet
-      </a>
+    <div class="relative overflow-hidden rounded-3xl text-center text-white">
+      <!-- Image de fond -->
+      <div class="absolute inset-0 z-0 overflow-hidden rounded-3xl">
+        <img 
+          src="/images/fond.webp" 
+          alt="Alayde Tech - Prêt à innover" 
+          class="w-full h-full object-cover animate-zoom"
+        />
+        <div class="absolute inset-0 bg-gradient-to-br from-[#1E3A8A]/80 to-[#1E3A8A]/60"></div>
+      </div>
+
+      <!-- Contenu CTA -->
+      <div class="relative z-10 p-8 sm:p-12">
+        <h2 class="text-3xl sm:text-4xl font-bold drop-shadow-md">Prêt à donner vie à votre projet ?</h2>
+        <p class="text-white/90 text-lg mt-4 max-w-2xl mx-auto drop-shadow-md">Discutons de vos besoins et trouvons ensemble la solution idéale.</p>
+        <a href="/contact" class="inline-block mt-8 bg-[#F59E0B] text-[#1E3A8A] font-semibold px-8 py-4 rounded-xl hover:bg-[#D97706] transition-all hover:shadow-xl hover:-translate-y-0.5">
+          Démarrer un projet
+        </a>
+      </div>
     </div>
   </section>
 </BaseLayout>
@@ -262,6 +285,17 @@ import { projects } from "../data/projects";
     .animate-scroll {
       animation-duration: 20s;
     }
+  }
+
+  /* Animation de zoom */
+  @keyframes zoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  .animate-zoom {
+    animation: zoom 15s ease-in-out infinite alternate;
   }
 
   /* Animation d'apparition */

@@ -3,18 +3,36 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Services" description="Découvrez nos services : développement web, SaaS, solutions métier, ONG et maintenance.">
-  <section class="py-20 px-4 max-w-6xl mx-auto">
-    <div class="text-center mb-16 animate-fade-in-up">
-      <span class="text-sm font-semibold text-[#F59E0B] uppercase tracking-wider">Nos services</span>
-      <h1 class="text-4xl md:text-5xl font-bold text-[#1E3A8A] mt-2">
+  <!-- Hero avec image de fond et zoom -->
+  <section class="relative py-20 px-4 overflow-hidden min-h-[50vh] flex items-center justify-center">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <div class="w-full h-full animate-zoom">
+        <img 
+          src="/images/fond.webp" 
+          alt="Alayde Tech - Nos services" 
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-br from-[#1E3A8A]/70 via-[#1E3A8A]/50 to-[#F59E0B]/30"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      <span class="inline-block bg-[#F59E0B]/20 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm">
+        Nos services
+      </span>
+      <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight drop-shadow-lg">
         Ce que nous <span class="text-[#F59E0B]">faisons</span>
       </h1>
-      <p class="text-lg text-[#64748B] mt-4 max-w-2xl mx-auto">
+      <p class="text-lg text-white/90 mt-4 max-w-2xl mx-auto drop-shadow-md">
         Des solutions digitales sur mesure pour répondre à vos besoins.
       </p>
     </div>
+  </section>
 
+  <!-- Grille des services -->
+  <section class="py-16 px-4 max-w-6xl mx-auto">
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Service 1 : Web -->
       <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 animate-fade-in-up animate-delay-1">
         <div class="w-14 h-14 bg-[#1E3A8A]/10 rounded-xl flex items-center justify-center text-3xl mb-4">🌐</div>
         <h3 class="text-xl font-semibold text-[#1E3A8A]">Développement Web</h3>
@@ -26,6 +44,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </ul>
       </div>
 
+      <!-- Service 2 : SaaS -->
       <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 animate-fade-in-up animate-delay-2">
         <div class="w-14 h-14 bg-[#10B981]/10 rounded-xl flex items-center justify-center text-3xl mb-4">☁️</div>
         <h3 class="text-xl font-semibold text-[#1E3A8A]">SaaS & Plateformes</h3>
@@ -37,6 +56,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </ul>
       </div>
 
+      <!-- Service 3 : Métier -->
       <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 animate-fade-in-up animate-delay-3">
         <div class="w-14 h-14 bg-[#F59E0B]/10 rounded-xl flex items-center justify-center text-3xl mb-4">🏢</div>
         <h3 class="text-xl font-semibold text-[#1E3A8A]">Solutions Métier</h3>
@@ -48,6 +68,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </ul>
       </div>
 
+      <!-- Service 4 : ONG -->
       <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 animate-fade-in-up animate-delay-2">
         <div class="w-14 h-14 bg-[#1E3A8A]/10 rounded-xl flex items-center justify-center text-3xl mb-4">🤝</div>
         <h3 class="text-xl font-semibold text-[#1E3A8A]">Solutions ONG</h3>
@@ -59,6 +80,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </ul>
       </div>
 
+      <!-- Service 5 : Maintenance -->
       <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 animate-fade-in-up animate-delay-3">
         <div class="w-14 h-14 bg-[#10B981]/10 rounded-xl flex items-center justify-center text-3xl mb-4">🛠️</div>
         <h3 class="text-xl font-semibold text-[#1E3A8A]">Maintenance & Support</h3>
@@ -70,6 +92,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </ul>
       </div>
 
+      <!-- Service 6 : Vitrine -->
       <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 animate-fade-in-up animate-delay-4">
         <div class="w-14 h-14 bg-[#F59E0B]/10 rounded-xl flex items-center justify-center text-3xl mb-4">🎯</div>
         <h3 class="text-xl font-semibold text-[#1E3A8A]">Sites Vitrines</h3>
@@ -89,3 +112,39 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     </div>
   </section>
 </BaseLayout>
+
+<style is:global>
+  /* Animation d'apparition des cartes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-delay-1 { animation-delay: 0.1s; }
+  .animate-delay-2 { animation-delay: 0.2s; }
+  .animate-delay-3 { animation-delay: 0.3s; }
+  .animate-delay-4 { animation-delay: 0.4s; }
+  .animate-delay-5 { animation-delay: 0.5s; }
+
+  /* Animation de zoom pour l'image de fond */
+  @keyframes zoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
+
+  .animate-zoom {
+    animation: zoom 18s ease-in-out infinite alternate;
+  }
+</style>

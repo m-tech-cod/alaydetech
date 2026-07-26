@@ -25,7 +25,7 @@ export const projects: Project[] = [
     title: "AgriLink",
     description: "Plateforme de mise en relation géolocalisée entre producteurs et consommateurs. Publiez vos produits, trouvez des circuits courts et contactez directement via WhatsApp.",
     category: "saas",
-    image: "/images/agrilink-placeholder.webp",
+    image: "/images/agrilink.webp",
     link: "#",
     featured: true,
   },

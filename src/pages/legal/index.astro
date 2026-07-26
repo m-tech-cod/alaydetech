@@ -3,36 +3,65 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Mentions légales" description="Mentions légales d'Alayde Tech.">
-  <section class="py-20 px-4 max-w-4xl mx-auto">
-    <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold text-[#1E3A8A]">
+  <!-- Hero avec image de fond et zoom -->
+  <section class="relative py-20 px-4 overflow-hidden min-h-[50vh] flex items-center justify-center">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <div class="w-full h-full animate-zoom">
+        <img 
+          src="/images/fond.webp" 
+          alt="Alayde Tech - Mentions légales" 
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-br from-[#1E3A8A]/70 via-[#1E3A8A]/50 to-[#F59E0B]/30"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight drop-shadow-lg">
         Mentions <span class="text-[#F59E0B]">légales</span>
       </h1>
       <div class="w-16 h-1 bg-[#F59E0B] mx-auto mt-4 rounded"></div>
     </div>
+  </section>
 
+  <!-- Contenu des mentions légales -->
+  <section class="py-16 px-4 max-w-4xl mx-auto">
     <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border border-[#E2E8F0] space-y-6">
-      <div>
+      
+      <!-- 1. Éditeur du site - PROTÉGÉ -->
+      <div class="legal-protected">
         <h2 class="text-xl font-bold text-[#1E3A8A]">1. Éditeur du site</h2>
+        <div class="text-[#64748B] mt-2 space-y-1">
+          <p><strong>ALAYDE TECH</strong></p>
+          <p>Statut : Entreprise individuelle</p>
+          <p>N° RCCM : RB/PNO/26 A 126770</p>
+          <p>N° IFU : 0202238028015</p>
+          <p>Adresse : Adjarra, Bénin</p>
+          <p>Téléphone : <a href="tel:+22996427604" class="text-[#1E3A8A] hover:underline">+229 01 96 42 76 04</a></p>
+          <p>Email : <a href="mailto:contact@alaydetech.com" class="text-[#1E3A8A] hover:underline">contact@alaydetech.com</a></p>
+        </div>
+      </div>
+
+      <!-- 2. Directeur de publication - PROTÉGÉ -->
+      <div class="legal-protected">
+        <h2 class="text-xl font-bold text-[#1E3A8A]">2. Directeur de publication</h2>
         <p class="text-[#64748B] mt-2">
-          <strong>ALAYDE TECH</strong><br />
-          Statut : Entreprise individuelle<br />
-          N° RCCM : RB/PNO/26 A 126770<br />
-          N° IFU : 0202238028015<br />
-          Adresse : Adjarra, Bénin<br />
-          Téléphone : +229 01 96 42 76 04<br />
+          MALOMON ARAFFATH<br />
+          Email : <a href="mailto:malomonaraffath@gmail.com" class="text-[#1E3A8A] hover:underline">malomonaraffath@gmail.com</a>
         </p>
       </div>
 
+      <!-- 3. Hébergement -->
       <div>
         <h2 class="text-xl font-bold text-[#1E3A8A]">3. Hébergement</h2>
         <p class="text-[#64748B] mt-2">
           <strong>Vercel Inc.</strong><br />
           340 S Lemon Ave #4133, Walnut, CA 91789, USA<br />
-          Site web : <a href="https://vercel.com" target="_blank" class="text-[#1E3A8A] hover:underline">vercel.com</a>
+          Site web : <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" class="text-[#1E3A8A] hover:underline">vercel.com</a>
         </p>
       </div>
 
+      <!-- 4. Propriété intellectuelle -->
       <div>
         <h2 class="text-xl font-bold text-[#1E3A8A]">4. Propriété intellectuelle</h2>
         <p class="text-[#64748B] mt-2">
@@ -40,6 +69,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </p>
       </div>
 
+      <!-- 5. Responsabilité -->
       <div>
         <h2 class="text-xl font-bold text-[#1E3A8A]">5. Responsabilité</h2>
         <p class="text-[#64748B] mt-2">
@@ -47,6 +77,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </p>
       </div>
 
+      <!-- 6. Cookies -->
       <div>
         <h2 class="text-xl font-bold text-[#1E3A8A]">6. Cookies</h2>
         <p class="text-[#64748B] mt-2">
@@ -54,6 +85,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </p>
       </div>
 
+      <!-- 7. Solutions SaaS éditées -->
       <div>
         <h2 class="text-xl font-bold text-[#1E3A8A]">7. Solutions SaaS éditées</h2>
         <p class="text-[#64748B] mt-2">
@@ -61,12 +93,59 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </p>
         <ul class="list-disc pl-6 mt-2 text-[#64748B] space-y-1">
           <li><strong>Eventvivo</strong> — Plateforme événementielle pour la gestion des invités et le suivi en temps réel.</li>
+          <li><strong>AgriLink</strong> — Plateforme de mise en relation géolocalisée entre producteurs agricoles et consommateurs.</li>
         </ul>
       </div>
 
+      <!-- 8. Loi applicable -->
+      <div>
+        <h2 class="text-xl font-bold text-[#1E3A8A]">8. Loi applicable</h2>
+        <p class="text-[#64748B] mt-2">
+          Les présentes mentions légales sont régies par le droit béninois. En cas de litige, les tribunaux de Cotonou seront seuls compétents.
+        </p>
+      </div>
+
       <div class="text-sm text-[#64748B] border-t border-[#E2E8F0] pt-4">
-        <p>Dernière mise à jour : juin 2026</p>
+        <p>Dernière mise à jour : juillet 2026</p>
       </div>
     </div>
   </section>
 </BaseLayout>
+
+<style is:global>
+  /* Animation de zoom pour l'image de fond */
+  @keyframes zoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
+
+  .animate-zoom {
+    animation: zoom 18s ease-in-out infinite alternate;
+  }
+
+  /* Protection contre la sélection et la copie des infos juridiques */
+  .legal-protected {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  /* Mais les liens restent cliquables et sélectionnables */
+  .legal-protected a {
+    user-select: text;
+    -webkit-user-select: text;
+  }
+</style>
+
+<script>
+  // Bloquer la copie sur les éléments protégés
+  document.addEventListener('copy', (e) => {
+    const target = e.target.closest('.legal-protected');
+    if (target) {
+      e.preventDefault();
+      alert('📝 Les informations juridiques de ce site sont protégées.');
+    }
+  });
+</script>
