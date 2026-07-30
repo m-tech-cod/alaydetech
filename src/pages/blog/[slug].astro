@@ -10,13 +10,14 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+const canonicalURL = `https://alaydetech.com/blog/${post.slug}`;
 const currentUrl = Astro.url.href;
 const shareText = encodeURIComponent(`📖 ${post.title} - ALAYDE TECH`);
 const shareUrl = encodeURIComponent(currentUrl);
 const whatsappUrl = `https://wa.me/?text=${shareText}%20${shareUrl}`;
 ---
 
-<BaseLayout title={post.title} description={post.description}>
+<BaseLayout title={post.title} description={post.description} canonical={canonicalURL}>
   <section class="py-20 px-4 max-w-4xl mx-auto">
     <div>
       <a href="/blog" class="inline-flex items-center gap-2 text-[#1E3A8A] hover:text-[#F59E0B] transition text-sm mb-8">

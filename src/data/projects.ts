@@ -13,15 +13,6 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 0,
-    title: "Eventvivo",
-    description: "Invitations numériques, RSVP, QR Codes et suivi des invités en temps réel. Créez votre événement gratuitement (mariage, anniversaire, baptême, dot, etc.).",
-    category: "saas",
-    image: "/images/eventvivo.webp",
-    link: "#",
-    featured: true,
-  },
-  {
-    id: 1,
     title: "AgriLink",
     description: "Plateforme de mise en relation géolocalisée entre producteurs et consommateurs. Publiez vos produits, trouvez des circuits courts et contactez directement via WhatsApp.",
     category: "saas",
@@ -29,6 +20,16 @@ export const projects: Project[] = [
     link: "#",
     featured: true,
   },
+  {
+    id: 1,
+    title: "Eventvivo",
+    description: "Invitations numériques, RSVP, QR Codes et suivi des invités en temps réel. Créez votre événement gratuitement (mariage, anniversaire, baptême, dot, etc.).",
+    category: "saas",
+    image: "/images/eventvivo.webp",
+    link: "https://eventvivo.com",
+    featured: true,
+  },
+  
   {
     id: 2,
     title: "Communauté ProLife",
@@ -96,7 +97,7 @@ export const projects: Project[] = [
     link: "https://flowbrand-ui.vercel.app",
   },
   {
-    id: 9,
+    id: 10,
     title: "Real-Time Analytics Dashboard",
     description: "Tableau de bord de visualisation de données en temps réel.",
     category: "hng",
@@ -104,7 +105,7 @@ export const projects: Project[] = [
     link: "https://realtime-dashboard-873a.vercel.app/",
   },
   {
-    id: 10,
+    id: 11,
     title: "Invoice Management App",
     description: "Application de gestion de factures",
     category: "hng",
@@ -112,7 +113,7 @@ export const projects: Project[] = [
     link: "https://invoice-app-nine-mocha.vercel.app/",
   },
   {
-    id: 11,
+    id: 12,
     title: "Portfolio SvelteKit",
     description: "Portfolio développeur moderne.",
     category: "hng",
@@ -120,7 +121,7 @@ export const projects: Project[] = [
     link: "https://svelte-three.vercel.app/",
   },
   {
-    id: 12,
+    id: 13,
     title: "Habit Tracker PWA",
     description: "Application progressive de suivi d'habitudes, performante et installable.",
     category: "hng",
@@ -128,7 +129,7 @@ export const projects: Project[] = [
     link: "https://habit-tracker-26fm.vercel.app/",
   },
   {
-    id: 13,
+    id: 14,
     title: "WhisperBox Messenger",
     description: "Application de messagerie sécurisée avec chiffrement de bout en bout.",
     category: "hng",

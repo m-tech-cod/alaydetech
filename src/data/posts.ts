@@ -32,7 +32,7 @@ export const posts = [
 
     <p>Eventvivo propose une version gratuite pour vous permettre de tester la plateforme. Créez votre événement dès maintenant et découvrez une nouvelle façon d'organiser vos moments importants.</p>
 
-    <p><strong>Eventvivo</strong> — Plateforme événementielle en cours de développement. Restez connectés !</p>
+    <p><a href="https://eventvivo.com" target="_blank" rel="noopener noreferrer">Découvrir Eventvivo →</a></p>
 
     <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions SaaS pour une gestion d'événements simplifiée.</em></p>
     `,
@@ -155,29 +155,28 @@ export const posts = [
     date: "2026-06-27",
     author: "Alayde Tech",
     tags: ["Solidarité", "Association", "Ya Tchégbo", "Engagement", "Bénéficiaires"],
-    image: "/images/yatchegbo.webp",
     content: `
-  <h1>Site web pour association de solidarité : l'exemple de Ya Tchégbo</h1>
+    <h1>Site web pour association de solidarité : l'exemple de Ya Tchégbo</h1>
 
-  <p>La solidarité est une valeur fondamentale. Ya Tchégbo est une association qui œuvre pour le bien-être des communautés à travers des actions solidaires et un engagement fort.</p>
+    <p>La solidarité est une valeur fondamentale. Ya Tchégbo est une association qui œuvre pour le bien-être des communautés à travers des actions solidaires et un engagement fort.</p>
 
-  <h2>Un site web pour renforcer l'impact</h2>
+    <h2>Un site web pour renforcer l'impact</h2>
 
-  <p>Le site conçu par Alayde Tech pour Ya Tchégbo met en lumière :</p>
+    <p>Le site conçu par Alayde Tech pour Ya Tchégbo met en lumière :</p>
 
-  <ul>
-    <li><strong>Les actions solidaires</strong> menées sur le terrain.</li>
-    <li><strong>Les témoignages</strong> des bénéficiaires.</li>
-    <li><strong>Les opportunités</strong> de bénévolat et de don.</li>
-    <li><strong>Les partenariats</strong> et collaborations.</li>
-  </ul>
+    <ul>
+      <li><strong>Les actions solidaires</strong> menées sur le terrain.</li>
+      <li><strong>Les témoignages</strong> des bénéficiaires.</li>
+      <li><strong>Les opportunités</strong> de bénévolat et de don.</li>
+      <li><strong>Les partenariats</strong> et collaborations.</li>
+    </ul>
 
-  <h2>Pourquoi un site web pour une association de solidarité ?</h2>
+    <h2>Pourquoi un site web pour une association de solidarité ?</h2>
 
-  <p>Un site web permet de toucher un large public, de sensibiliser sur les enjeux sociaux et de mobiliser des ressources. Il est également un outil de transparence et de redevabilité.</p>
+    <p>Un site web permet de toucher un large public, de sensibiliser sur les enjeux sociaux et de mobiliser des ressources. Il est également un outil de transparence et de redevabilité.</p>
 
-  <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions web pour associations de solidarité.</em></p>
-    `,
+    <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions web pour associations de solidarité.</em></p>
+      `,
   },
 
   // ----- ARTICLE 6 : Pourquoi un site web pour une association ? -----
@@ -188,36 +187,35 @@ export const posts = [
     date: "2026-06-25",
     author: "Alayde Tech",
     tags: ["Association", "ONG", "Site web", "Visibilité", "Crédibilité", "Communication"],
-    image: "/images/association-web.webp",
     content: `
-  <h1>Pourquoi votre association ou ONG a besoin d'un site web professionnel</h1>
+    <h1>Pourquoi votre association ou ONG a besoin d'un site web professionnel</h1>
 
-  <p>De nombreuses associations et ONG hésitent encore à investir dans un site web professionnel. Pourtant, la présence en ligne est devenue indispensable pour toute organisation souhaitant avoir un impact durable.</p>
+    <p>De nombreuses associations et ONG hésitent encore à investir dans un site web professionnel. Pourtant, la présence en ligne est devenue indispensable pour toute organisation souhaitant avoir un impact durable.</p>
 
-  <h2>5 raisons de créer un site web pour votre association</h2>
+    <h2>5 raisons de créer un site web pour votre association</h2>
 
-  <h3>1. Crédibilité et professionnalisme</h3>
-  <p>Un site web bien conçu renforce la crédibilité de votre organisation auprès des donateurs, des partenaires et des bénéficiaires.</p>
+    <h3>1. Crédibilité et professionnalisme</h3>
+    <p>Un site web bien conçu renforce la crédibilité de votre organisation auprès des donateurs, des partenaires et des bénéficiaires.</p>
 
-  <h3>2. Visibilité et notoriété</h3>
-  <p>Un site web permet à votre association d'être visible 24h/24, 7j/7, et d'atteindre un public international.</p>
+    <h3>2. Visibilité et notoriété</h3>
+    <p>Un site web permet à votre association d'être visible 24h/24, 7j/7, et d'atteindre un public international.</p>
 
-  <h3>3. Communication efficace</h3>
-  <p>Partagez vos actualités, vos projets et vos appels à mobilisation de manière claire et structurée.</p>
+    <h3>3. Communication efficace</h3>
+    <p>Partagez vos actualités, vos projets et vos appels à mobilisation de manière claire et structurée.</p>
 
-  <h3>4. Collecte de fonds simplifiée</h3>
-  <p>Intégrez des outils de don en ligne pour faciliter les contributions.</p>
+    <h3>4. Collecte de fonds simplifiée</h3>
+    <p>Intégrez des outils de don en ligne pour faciliter les contributions.</p>
 
-  <h3>5. Transparence et redevabilité</h3>
-  <p>Publiez vos rapports d'activités, vos comptes et vos résultats pour renforcer la confiance.</p>
+    <h3>5. Transparence et redevabilité</h3>
+    <p>Publiez vos rapports d'activités, vos comptes et vos résultats pour renforcer la confiance.</p>
 
-  <h2>Alayde Tech accompagne les associations</h2>
+    <h2>Alayde Tech accompagne les associations</h2>
 
-  <p>Alayde Tech conçoit des sites web sur mesure pour les associations et ONG. Nous écoutons vos besoins et créons des solutions adaptées à votre mission.</p>
+    <p>Alayde Tech conçoit des sites web sur mesure pour les associations et ONG. Nous écoutons vos besoins et créons des solutions adaptées à votre mission.</p>
 
-  <p><a href="/contact" target="_blank">Contactez-nous pour votre projet →</a></p>
+    <p><a href="/contact" target="_blank">Contactez-nous pour votre projet →</a></p>
 
-  <p><em>Écrit par <strong>Alayde Tech</strong> — Sites web pour associations et ONG.</em></p>
+    <p><em>Écrit par <strong>Alayde Tech</strong> — Sites web pour associations et ONG.</em></p>
       `,
   },
 
@@ -556,7 +554,6 @@ export const posts = [
   date: "2026-07-08",
   author: "Alayde Tech",
   tags: ["AgriLink", "Agriculture", "Circuits courts", "Géolocalisation", "SaaS"],
-  image: "/images/agrilink-placeholder.webp",
   content: `
     <h1>AgriLink : la révolution de la mise en relation agricole</h1>
     <p>Le constat est criant dans nos régions : les producteurs agricoles peinent à écouler leurs récoltes à des prix justes, tandis que les consommateurs urbains recherchent des produits frais et locaux, sans savoir où les trouver. Face à ce décalage, la technologie géolocalisée s'impose comme la solution la plus efficace pour recréer du lien. C'est dans cette optique qu'<strong>Alayde Tech</strong> lance <strong>AgriLink</strong>, une plateforme SaaS innovante de mise en relation directe.</p>
@@ -587,7 +584,7 @@ export const posts = [
     <p>AgriLink est conçue pour être simple d'utilisation, même sur des connexions mobiles limitées. La sécurité des données et des échanges est une priorité.</p>
     <h2>Conclusion</h2>
     <p>AgriLink verra le jour très prochainement. Découvrez ce projet dans nos réalisations et restez connectés pour le lancement.</p>
-    <p><a href="/projects">Découvrir AgriLink dans nos réalisations →</a></p>
+    
   `
 }
 ];

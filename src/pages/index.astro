@@ -334,22 +334,28 @@ import { projects } from "../data/projects";
 </style>
 
 <script>
-  // Machine à écrire
+  // Machine à écrire - CORRECTION: ajout d'un try...catch
   document.addEventListener('DOMContentLoaded', () => {
-    const el = document.querySelector('.typewriter');
-    if (el) {
-      const words = JSON.parse(el.dataset.words);
-      let i = 0;
-      setInterval(() => {
-        el.textContent = words[i];
-        i = (i + 1) % words.length;
-      }, 2500);
+    try {
+      const el = document.querySelector('.typewriter');
+      if (el) {
+        const words = JSON.parse(el.dataset.words);
+        let i = 0;
+        setInterval(() => {
+          el.textContent = words[i];
+          i = (i + 1) % words.length;
+        }, 2500);
+      }
+    } catch (error) {
+      console.warn('Machine à écrire: élément non trouvé ou erreur de parsing', error);
     }
   });
 
-  // Compteurs
+  // Compteurs - CORRECTION: vérification de l'existence des éléments
   function animateCounters() {
     const counters = document.querySelectorAll('.stat-number');
+    if (counters.length === 0) return; // Sortie si aucun compteur n'est trouvé
+    
     counters.forEach(counter => {
       const target = parseInt(counter.getAttribute('data-target'));
       const duration = 2000;
