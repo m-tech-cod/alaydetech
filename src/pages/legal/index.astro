@@ -113,17 +113,6 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 </BaseLayout>
 
 <style is:global>
-  /* Animation de zoom pour l'image de fond */
-  @keyframes zoom {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.08); }
-    100% { transform: scale(1); }
-  }
-
-  .animate-zoom {
-    animation: zoom 18s ease-in-out infinite alternate;
-  }
-
   /* Protection contre la sélection et la copie des infos juridiques */
   .legal-protected {
     user-select: none;

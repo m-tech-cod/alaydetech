@@ -5,7 +5,10 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://alaydetech.com',
   integrations: [
-    tailwind(), 
+    tailwind(),
     sitemap()
   ],
+  build: {
+    inlineStylesheets: 'auto',
+  },
 });

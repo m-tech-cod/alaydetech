@@ -38,41 +38,6 @@ export const posts = [
     `,
   },
 
-  // ----- ARTICLE 2 : ProLife -----
-  {
-    slug: "gestion-communautaire-association-prolife",
-    title: "Comment gérer efficacement une communauté associative avec une plateforme digitale",
-    description: "Découvrez comment la plateforme de gestion communautaire de ProLife a révolutionné le suivi des membres, des adhésions et des événements.",
-    date: "2026-07-02",
-    author: "Alayde Tech",
-    tags: ["Association", "Gestion communautaire", "ProLife", "Plateforme digitale", "ONG"],
-    image: "/images/prolife.webp",
-    content: `
-    <h1>Gestion communautaire : la solution digitale pour les associations</h1>
-
-    <p>Les associations et ONG font face à des défis quotidiens : gestion des membres, suivi des adhésions, organisation d'événements et communication interne. Alayde Tech accompagne ces organisations avec des solutions sur mesure.</p>
-
-    <h2>Le cas de la communauté ProLife</h2>
-
-    <p>La plateforme conçue pour ProLife a permis de centraliser toutes les données de la communauté :</p>
-
-    <ul>
-      <li><strong>Gestion des membres</strong> : Suivi des inscriptions, des profils et des historiques.</li>
-      <li><strong>Adhésions</strong> : Processus simplifié et traçabilité des paiements.</li>
-      <li><strong>Événements</strong> : Planification et suivi des activités communautaires.</li>
-      <li><strong>Archives</strong> : Conservation des documents et rapports d'activités.</li>
-    </ul>
-
-    <h2>Pourquoi digitaliser la gestion associative ?</h2>
-
-    <p>La digitalisation permet aux associations de gagner en efficacité, de réduire les erreurs et d'améliorer la communication avec les membres. Les outils numériques facilitent également la collecte de fonds et le reporting.</p>
-
-    <p><a href="https://communaute-prolife.vercel.app/" target="_blank">Découvrir la plateforme ProLife →</a></p>
-
-    <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions digitales pour associations et ONG.</em></p>
-        `,
-  },
-
   // ----- ARTICLE 3 : ICMDA -----
   {
     slug: "site-web-association-humanitaire-icmda",
@@ -583,8 +548,97 @@ export const posts = [
     <h2>Une solution accessible et sécurisée</h2>
     <p>AgriLink est conçue pour être simple d'utilisation, même sur des connexions mobiles limitées. La sécurité des données et des échanges est une priorité.</p>
     <h2>Conclusion</h2>
-    <p>AgriLink verra le jour très prochainement. Découvrez ce projet dans nos réalisations et restez connectés pour le lancement.</p>
+    <p>AgriLink verra le jour très prochainement.</p>
+
+    <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions SaaS pour une gestion d'événements simplifiée.</em></p>
     
+  `
+},
+
+// ----- ARTICLE 17 : Guide mariage Eventvivo -----
+{
+  slug: "organiser-mariage-benin-afrique-sans-stress",
+  title: "Comment organiser un mariage au Bénin ou en Afrique de l'Ouest sans stress en 2026",
+  description: "Découvrez le guide complet pour organiser un mariage au Bénin ou en Afrique de l'Ouest sans stress. Gestion des invités, RSVP, invitations numériques et astuces locales.",
+  date: "2026-08-02",
+  author: "Alayde Tech",
+  tags: ["Mariage", "Organisation événementielle", "Invitations numériques", "RSVP", "Eventvivo", "Guide pratique"],
+  image: "/images/eventvivo.webp",
+  content: `
+    <h1>Comment organiser un mariage au Bénin ou en Afrique de l'Ouest sans stress en 2026</h1>
+
+    <p>Organiser un mariage, c'est un vrai casse‑tête. Entre la liste des invités qui s'allonge, les confirmations de présence qui n'arrivent pas et les imprévus de dernière minute, le stress monte vite.</p>
+
+    <p>Vous avez peur de manquer de nourriture, de voir des places vides ou, pire, d'avoir trop de monde à la dernière minute. Les listes sur papier et les relances WhatsApp finissent par vous épuiser. Le jour J, vous passez votre temps à gérer les absents et les retardataires.</p>
+
+    <p>Pourtant, une solution simple existe pour <strong>organiser un mariage au Bénin ou en Afrique de l'Ouest sans stress</strong> : une plateforme digitale comme <strong>Eventvivo</strong> vous permet de tout centraliser. Invitations numériques, suivi des RSVP en temps réel, QR Codes pour l'entrée… Tout devient fluide, rapide et efficace. Découvrez comment dans ce guide complet.</p>
+
+    <h2>Les 5 étapes clés pour un mariage réussi</h2>
+
+    <h3>1. Définir votre budget et votre vision</h3>
+    <p>Avant toute chose, fixez un budget réaliste. Il vous guidera dans tous vos choix : nombre d'invités, lieu, traiteur, décoration, tenues, etc.</p>
+    <ul>
+      <li><strong>Listez vos priorités</strong> : repas, musique, photos, cadeaux…</li>
+      <li><strong>Prévoyez une marge</strong> pour les imprévus (10 à 15 %).</li>
+    </ul>
+
+    <h3>2. Établir la liste d'invités, un vrai casse‑tête</h3>
+    <p>C'est souvent l'étape la plus délicate. Famille, amis, collègues… il faut trancher.</p>
+    <ul>
+      <li><strong>Classez vos invités</strong> par catégorie : proches, famille élargie, relations professionnelles.</li>
+      <li><strong>Limitez</strong> le nombre total en fonction de votre budget et de la capacité du lieu.</li>
+      <li><strong>Utilisez Eventvivo</strong> pour créer votre <strong>liste d'invités</strong> en ligne et suivre chaque confirmation en temps réel. Fini les oublis et les doublons.</li>
+    </ul>
+
+    <h3>3. Choisir le bon lieu et les bons prestataires</h3>
+    <p>Le lieu donne le ton de votre mariage. Visitez plusieurs options et réservez tôt, surtout en haute saison.</p>
+    <ul>
+      <li><strong>Comparez</strong> plusieurs salles ou espaces en fonction de votre budget.</li>
+      <li><strong>Rencontrez</strong> vos prestataires (traiteur, photographe, DJ) pour vérifier leur fiabilité.</li>
+      <li><strong>Négociez</strong> les prix et exigez un contrat écrit.</li>
+    </ul>
+
+    <h3>4. L'invitation numérique : moderne, pratique et écologique</h3>
+    <p>Les <strong>invitations numériques</strong> séduisent de plus en plus les jeunes couples. Rapides à envoyer, faciles à suivre, elles permettent à vos invités de confirmer leur présence en un clic.</p>
+    <ul>
+      <li><strong>Choisissez un modèle élégant</strong> qui correspond au thème de votre mariage.</li>
+      <li><strong>Suivez les confirmations</strong> en temps réel grâce à Eventvivo. Vous savez exactement qui vient, qui décline, et qui n'a pas encore répondu.</li>
+      <li><strong>Recevez automatiquement</strong> les coordonnées de vos invités pour organiser la logistique (transport, hébergement).</li>
+    </ul>
+
+    <h3>5. Gérer le jour J avec des QR Codes</h3>
+    <p>Le grand jour, l'entrée des invités doit être rapide et sans confusion. Avec Eventvivo, chaque invité reçoit un <strong>QR Code unique</strong> à scanner à l'entrée.</p>
+    <ul>
+      <li><strong>Fini les listes papier</strong> : un simple scan suffit pour valider la présence.</li>
+      <li><strong>Contrôle d'accès sécurisé</strong> : évitez les intrus et les conflits de place.</li>
+      <li><strong>Concentrez-vous sur votre journée</strong> : tout est géré en temps réel.</li>
+    </ul>
+
+    <h2>Anticiper les imprévus pour un mariage sans stress</h2>
+
+    <h3>1. La météo et les solutions de repli</h3>
+    <p>Préparez un plan B en cas de pluie. Une tente, un espace couvert ou une salle de secours sont indispensables.</p>
+
+    <h3>2. Les retards et les absents de dernière minute</h3>
+    <p>Avec Eventvivo, vous avez une vision claire des confirmations. Vous pouvez relancer automatiquement les invités qui n'ont pas répondu, et ajuster votre logistique en conséquence.</p>
+
+    <h3>3. La logistique des repas et des places</h3>
+    <p>Savoir exactement combien de personnes sont présentes vous permet d'optimiser les quantités de nourriture et le placement des tables. Fini le gaspillage ou le manque.</p>
+
+    <h2>Pourquoi Eventvivo est la solution idéale pour votre mariage</h2>
+    <ul>
+      <li><strong>Gratuit</strong> pour démarrer et tester.</li>
+      <li><strong>100 % en ligne</strong> : accessible depuis votre téléphone ou ordinateur.</li>
+      <li><strong>Évolutif</strong> : convient aussi aux dots, baptêmes et anniversaires.</li>
+      <li><strong>Populaire</strong> en Afrique de l'Ouest, de nombreux couples l'utilisent déjà.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>Organiser un mariage au Bénin ou en Afrique de l'Ouest sans stress, c'est possible. Il suffit de bien planifier, de s'appuyer sur des outils modernes comme Eventvivo et d'anticiper les imprévus. Vous gagnerez en sérénité et votre journée restera un merveilleux souvenir.</p>
+
+    <p><a href="https://eventvivo.com" target="_blank" rel="noopener noreferrer">Découvrir Eventvivo et créer votre événement gratuitement →</a></p>
+
+    <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions SaaS pour une gestion d'événements simplifiée.</em></p>
   `
 }
 ];

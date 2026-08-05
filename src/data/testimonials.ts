@@ -8,14 +8,6 @@ export const testimonials = [
     logo: "/images/eventvivo.webp",
   },
   {
-    id: 1,
-    name: "Président de ProLife",
-    role: "Association ProLife",
-    content: "La plateforme de gestion communautaire conçue par Alayde Tech a transformé notre manière d'organiser nos activités. Le suivi des membres et des événements est désormais fluide et efficace. Un outil indispensable pour notre association.",
-    rating: 5,
-    logo: "/images/prolife.webp",
-  },
-  {
     id: 2,
     name: "Président de l'ICMDA",
     role: "ICMDA - Ideas For Changing the Mentality of Development Actors",

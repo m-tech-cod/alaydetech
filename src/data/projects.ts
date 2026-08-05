@@ -5,7 +5,7 @@ export interface Project {
   title: string;
   description: string;
   category: "association" | "ecommerce" | "blog" | "hng" | "portfolio" | "saas";
-  image: string;
+  image?: string;
   link: string;
   featured?: boolean;
 }
@@ -16,7 +16,6 @@ export const projects: Project[] = [
     title: "AgriLink",
     description: "Plateforme de mise en relation géolocalisée entre producteurs et consommateurs. Publiez vos produits, trouvez des circuits courts et contactez directement via WhatsApp.",
     category: "saas",
-    image: "/images/agrilink.webp",
     link: "#",
     featured: true,
   },
@@ -27,16 +26,6 @@ export const projects: Project[] = [
     category: "saas",
     image: "/images/eventvivo.webp",
     link: "https://eventvivo.com",
-    featured: true,
-  },
-  
-  {
-    id: 2,
-    title: "Communauté ProLife",
-    description: "Plateforme de gestion centralisée des membres, adhésions, archives et événements.",
-    category: "association",
-    image: "/images/prolife.webp",
-    link: "https://communaute-prolife.vercel.app/",
     featured: true,
   },
   {

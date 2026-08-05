@@ -1,25 +1,29 @@
 ---
 import "../styles/globals.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
 import Header from "../components/organisms/Header.astro";
 import Footer from "../components/organisms/Footer.astro";
 
 const lang = Astro.url.searchParams.get('lang') || 'fr';
-// Pour passer la langue au Header (en prop)
-const headerProps = { lang };
-// Et pour l'utiliser dans les balises HTML (hreflang, etc.)
 
 interface Props {
   title: string;
   description?: string;
   image?: string;
+  canonical?: string;
 }
 
-const { title, description, image } = Astro.props;
+const { title, description, image, canonical } = Astro.props;
 const siteTitle = "Alayde Tech";
 const siteDescription = description || "Alayde Tech conçoit des applications web, plateformes SaaS et solutions numériques sur mesure pour entreprises, ONG et particuliers.";
 const siteImage = image || "https://alaydetech.com/images/logo.webp";
 const siteUrl = "https://alaydetech.com";
-const currentUrl = Astro.url.href;
+// URL canonique propre (sans paramètres de requête ni fragment)
+const canonicalURL = canonical || new URL(Astro.url.pathname, siteUrl).href;
 ---
 
 <!DOCTYPE html>
@@ -39,34 +43,24 @@ const currentUrl = Astro.url.href;
     <!-- Robots -->
     <meta name="robots" content="index, follow" />
     
-    <!-- Balise canonique générique (basée sur l'URL actuelle) -->
-    <link rel="canonical" href={currentUrl} />
-    
+    <!-- Balise canonique -->
+    <link rel="canonical" href={canonicalURL} />
+
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:title" content={`${title} | ${siteTitle}`} />
     <meta property="og:description" content={siteDescription} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={siteUrl} />
+    <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={siteImage} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content={siteTitle} />
     <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_US'} />
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={`${title} | ${siteTitle}`} />
     <meta name="twitter:description" content={siteDescription} />
     <meta name="twitter:image" content={siteImage} />
-    
-    <!-- Polices -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    
+
     <!-- Schema.org (pour Google) -->
     <script type="application/ld+json">
       {
@@ -84,7 +78,12 @@ const currentUrl = Astro.url.href;
           "@type": "ContactPoint",
           "email": "contact@alaydetech.com",
           "contactType": "customer service"
-        }
+        },
+        "sameAs": [
+          "https://www.facebook.com/share/1H5BPk3gRm/?mibextid=wwXIfr",
+          "https://www.linkedin.com/company/alayde-tech",
+          "https://github.com/m-tech-cod"
+        ]
       }
     </script>
   </head>
