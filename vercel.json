@@ -2,12 +2,6 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.alaydetech.com" }],
-      "destination": "https://alaydetech.com/:path*",
-      "permanent": true
-    },
-    {
       "source": "/blog/5-raisons-digitaliser-association",
       "destination": "/blog/pourquoi-site-web-association-ong",
       "permanent": true
