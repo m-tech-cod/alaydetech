@@ -1,4 +1,33 @@
 {
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.alaydetech.com" }],
+      "destination": "https://alaydetech.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/blog/5-raisons-digitaliser-association",
+      "destination": "/blog/pourquoi-site-web-association-ong",
+      "permanent": true
+    },
+    {
+      "source": "/blog/solutions-digitales-ong",
+      "destination": "/blog/pourquoi-site-web-association-ong",
+      "permanent": true
+    },
+    {
+      "source": "/blog/site-association-education-burkina-humanitaire",
+      "destination": "/blog/site-web-association-humanitaire-icmda",
+      "permanent": true
+    },
+    {
+      "source": "/blog/site-web-association-solidarite-ya-tchegbo",
+      "destination": "/blog/site-web-association-humanitaire-icmda",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

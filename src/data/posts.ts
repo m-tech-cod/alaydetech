@@ -38,96 +38,48 @@ export const posts = [
     `,
   },
 
-  // ----- ARTICLE 3 : ICMDA -----
+  // ----- ARTICLE : Études de cas ICMDA + Burkina Humanitaire + Ya Tchégbo -----
   {
     slug: "site-web-association-humanitaire-icmda",
-    title: "Site web pour association humanitaire : l'exemple d'ICMDA",
-    description: "Découvrez comment un site web moderne renforce la crédibilité et la visibilité des associations humanitaires comme ICMDA.",
-    date: "2026-07-01",
+    title: "3 associations qui ont transformé leur impact grâce au web : ICMDA, Burkina Humanitaire et Ya Tchégbo",
+    description: "Trois études de cas d'associations humanitaires accompagnées par Alayde Tech : ICMDA, Burkina Humanitaire et Ya Tchégbo. Découvrez comment un site web a renforcé leur crédibilité, leur visibilité et leur capacité à mobiliser.",
+    date: "2026-08-08",
     author: "Alayde Tech",
-    tags: ["Association humanitaire", "Site web ONG", "ICMDA", "Visibilité", "Crédibilité"],
+    tags: ["Association humanitaire", "Site web ONG", "ICMDA", "Burkina Humanitaire", "Ya Tchégbo", "Étude de cas", "Crédibilité"],
     image: "/images/icmda.webp",
     content: `
-    <h1>Pourquoi un site web est essentiel pour une association humanitaire</h1>
+    <h1>3 associations qui ont transformé leur impact grâce au web</h1>
 
-    <p>Dans un monde de plus en plus connecté, la présence en ligne est devenue indispensable pour les associations humanitaires. Un site web bien conçu renforce la crédibilité, attire les donateurs et facilite la communication.</p>
+    <p>Dans un monde de plus en plus connecté, la présence en ligne est devenue indispensable pour les associations et ONG. Un site web bien conçu renforce la crédibilité, attire les donateurs et facilite la communication avec les parties prenantes. Voici trois exemples concrets d'associations accompagnées par <strong>Alayde Tech</strong>, chacune avec des besoins différents mais un même objectif : maximiser leur impact grâce au numérique.</p>
 
-    <h2>ICMDA : un exemple de réussite</h2>
+    <h2>1. ICMDA : valoriser l'action humanitaire à l'international</h2>
 
     <p>ICMDA (<em>Ideas For Changing the Mentality of Development Actors</em>) est une association engagée dans l'action humanitaire. Le site web conçu par Alayde Tech leur a permis de :</p>
 
     <ul>
       <li><strong>Valoriser leurs projets</strong> de terrain et initiatives solidaires.</li>
-      <li><strong>Mobiliser des partenaires</strong> et des donateurs.</li>
+      <li><strong>Mobiliser des partenaires</strong> et des donateurs à l'international.</li>
       <li><strong>Renforcer leur crédibilité</strong> auprès des institutions et du public.</li>
-    </ul>
-
-    <h2>Les avantages d'un site web pour une ONG</h2>
-
-    <ul>
-      <li>Visibilité internationale</li>
-      <li>Crédibilité et professionnalisme</li>
-      <li>Facilité de collecte de fonds</li>
-      <li>Communication transparente avec les parties prenantes</li>
     </ul>
 
     <p><a href="https://icmda.vercel.app/" target="_blank">Découvrir le site d'ICMDA →</a></p>
 
-    <p><em>Écrit par <strong>Alayde Tech</strong> — Sites web pour associations humanitaires.</em></p>
-      `,
-  },
+    <h2>2. Burkina Humanitaire : promouvoir l'éducation des enfants défavorisés</h2>
 
-  // ----- ARTICLE 4 : Burkina Humanitaire -----
-  {
-    slug: "site-association-education-burkina-humanitaire",
-    title: "Site web pour association d'éducation : le cas de Burkina Humanitaire",
-    description: "Comment un site web moderne aide Burkina Humanitaire à promouvoir l'éducation et le soutien social auprès des enfants défavorisés.",
-    date: "2026-06-29",
-    author: "Alayde Tech",
-    tags: ["Éducation", "Association", "Burkina Humanitaire", "Enfants défavorisés", "Soutien social"],
-    image: "/images/burkina.webp",
-    content: `
-  <h1>Site web pour association d'éducation : l'exemple de Burkina Humanitaire</h1>
+    <p>L'éducation est un droit fondamental. Pourtant, de nombreux enfants dans le monde n'y ont pas accès. Burkina Humanitaire est une association engagée dans la promotion de l'éducation et du soutien social auprès des enfants défavorisés. Le site conçu par Alayde Tech met en avant :</p>
 
-  <p>L'éducation est un droit fondamental. Pourtant, de nombreux enfants dans le monde n'y ont pas accès. Burkina Humanitaire est une association engagée dans la promotion de l'éducation et du soutien social auprès des enfants défavorisés.</p>
+    <ul>
+      <li><strong>Les actions éducatives</strong> menées sur le terrain.</li>
+      <li><strong>Les témoignages</strong> des bénéficiaires et des partenaires.</li>
+      <li><strong>Les opportunités</strong> de soutien et de don.</li>
+      <li><strong>Les projets</strong> à venir et les besoins urgents.</li>
+    </ul>
 
-  <h2>Un site web au service de l'éducation</h2>
+    <p><a href="https://burkinahumanitaire.vercel.app/" target="_blank">Découvrir le site de Burkina Humanitaire →</a></p>
 
-  <p>Le site conçu par Alayde Tech pour Burkina Humanitaire met en avant :</p>
+    <h2>3. Ya Tchégbo : engager une communauté autour de la solidarité</h2>
 
-  <ul>
-    <li><strong>Les actions éducatives</strong> menées sur le terrain.</li>
-    <li><strong>Les témoignages</strong> des bénéficiaires et des partenaires.</li>
-    <li><strong>Les opportunités</strong> de soutien et de don.</li>
-    <li><strong>Les projets</strong> à venir et les besoins urgents.</li>
-  </ul>
-
-  <h2>Pourquoi un site web pour une association éducative ?</h2>
-
-  <p>Un site web permet de toucher un large public, de sensibiliser sur les enjeux éducatifs et de mobiliser des ressources. Il est également un outil de transparence et de redevabilité.</p>
-
-  <p><a href="https://burkinahumanitaire.vercel.app/" target="_blank">Découvrir le site de Burkina Humanitaire →</a></p>
-
-  <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions web pour associations éducatives.</em></p>
-    `,
-  },
-
-  // ----- ARTICLE 5 : Ya Tchégbo -----
-  {
-    slug: "site-web-association-solidarite-ya-tchegbo",
-    title: "Site web pour association de solidarité : l'exemple de Ya Tchégbo",
-    description: "Comment un site web clair et accessible aide Ya Tchégbo à promouvoir la solidarité et à engager les bénéficiaires.",
-    date: "2026-06-27",
-    author: "Alayde Tech",
-    tags: ["Solidarité", "Association", "Ya Tchégbo", "Engagement", "Bénéficiaires"],
-    content: `
-    <h1>Site web pour association de solidarité : l'exemple de Ya Tchégbo</h1>
-
-    <p>La solidarité est une valeur fondamentale. Ya Tchégbo est une association qui œuvre pour le bien-être des communautés à travers des actions solidaires et un engagement fort.</p>
-
-    <h2>Un site web pour renforcer l'impact</h2>
-
-    <p>Le site conçu par Alayde Tech pour Ya Tchégbo met en lumière :</p>
+    <p>La solidarité est une valeur fondamentale. Ya Tchégbo est une association qui œuvre pour le bien-être des communautés à travers des actions solidaires et un engagement fort. Le site conçu par Alayde Tech pour Ya Tchégbo met en lumière :</p>
 
     <ul>
       <li><strong>Les actions solidaires</strong> menées sur le terrain.</li>
@@ -136,26 +88,35 @@ export const posts = [
       <li><strong>Les partenariats</strong> et collaborations.</li>
     </ul>
 
-    <h2>Pourquoi un site web pour une association de solidarité ?</h2>
+    <h2>Ce que ces trois projets ont en commun</h2>
 
-    <p>Un site web permet de toucher un large public, de sensibiliser sur les enjeux sociaux et de mobiliser des ressources. Il est également un outil de transparence et de redevabilité.</p>
+    <p>Malgré leurs missions différentes (action humanitaire internationale, éducation, solidarité communautaire), ICMDA, Burkina Humanitaire et Ya Tchégbo partagent les mêmes bénéfices depuis la mise en ligne de leur site :</p>
 
-    <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions web pour associations de solidarité.</em></p>
+    <ul>
+      <li>Visibilité internationale, accessible 24h/24</li>
+      <li>Crédibilité et professionnalisme renforcés auprès des institutions</li>
+      <li>Facilité de collecte de fonds et de mobilisation des donateurs</li>
+      <li>Communication transparente avec les parties prenantes et les bénéficiaires</li>
+    </ul>
+
+    <p>Vous dirigez une association ou une ONG et souhaitez un site web à la hauteur de votre mission ? <a href="/contact">Contactez Alayde Tech →</a></p>
+
+    <p><em>Écrit par <strong>Alayde Tech</strong> — Sites web pour associations humanitaires.</em></p>
       `,
   },
 
-  // ----- ARTICLE 6 : Pourquoi un site web pour une association ? -----
+  // ----- ARTICLE : Pourquoi un site web pour une association (+ solutions digitales) -----
   {
     slug: "pourquoi-site-web-association-ong",
     title: "Pourquoi votre association ou ONG a besoin d'un site web professionnel",
-    description: "Découvrez les raisons essentielles pour lesquelles une association ou une ONG doit investir dans un site web moderne et professionnel.",
-    date: "2026-06-25",
+    description: "Les raisons essentielles pour investir dans un site web professionnel, et les solutions digitales concrètes (gestion de projets, collecte de fonds, communication, suivi des bénéficiaires) pour maximiser votre impact.",
+    date: "2026-08-08",
     author: "Alayde Tech",
-    tags: ["Association", "ONG", "Site web", "Visibilité", "Crédibilité", "Communication"],
+    tags: ["Association", "ONG", "Site web", "Solutions digitales", "Visibilité", "Crédibilité", "Communication"],
     content: `
     <h1>Pourquoi votre association ou ONG a besoin d'un site web professionnel</h1>
 
-    <p>De nombreuses associations et ONG hésitent encore à investir dans un site web professionnel. Pourtant, la présence en ligne est devenue indispensable pour toute organisation souhaitant avoir un impact durable.</p>
+    <p>De nombreuses associations et ONG hésitent encore à investir dans un site web professionnel. Pourtant, la présence en ligne est devenue indispensable pour toute organisation souhaitant avoir un impact durable. Au-delà de la simple vitrine, un site web bien pensé devient un véritable outil de gestion, de mobilisation et de collecte de fonds.</p>
 
     <h2>5 raisons de créer un site web pour votre association</h2>
 
@@ -174,13 +135,29 @@ export const posts = [
     <h3>5. Transparence et redevabilité</h3>
     <p>Publiez vos rapports d'activités, vos comptes et vos résultats pour renforcer la confiance.</p>
 
+    <h2>Quelles solutions digitales concrètes pour une ONG ?</h2>
+
+    <p>Un site web professionnel s'accompagne souvent d'outils numériques qui démultiplient l'impact de votre association sur le terrain :</p>
+
+    <h3>Gestion de projets</h3>
+    <p>Les outils de gestion de projets permettent de planifier, suivre et évaluer les actions menées sur le terrain, avec une vue d'ensemble accessible à toute l'équipe.</p>
+
+    <h3>Collecte de fonds en ligne</h3>
+    <p>Les plateformes de don en ligne facilitent la collecte de fonds et élargissent le cercle des donateurs, en France comme à l'international.</p>
+
+    <h3>Communication et mobilisation</h3>
+    <p>Les réseaux sociaux couplés à un site web permettent de communiquer de manière transparente, de mobiliser les bénévoles et de fidéliser les soutiens.</p>
+
+    <h3>Suivi des bénéficiaires</h3>
+    <p>Les bases de données et outils de suivi permettent de mesurer précisément l'impact des actions menées et de le démontrer à vos partenaires.</p>
+
     <h2>Alayde Tech accompagne les associations</h2>
 
-    <p>Alayde Tech conçoit des sites web sur mesure pour les associations et ONG. Nous écoutons vos besoins et créons des solutions adaptées à votre mission.</p>
+    <p>Alayde Tech conçoit des sites web et des solutions digitales sur mesure pour les associations et ONG. Nous écoutons vos besoins et créons des outils adaptés à votre mission.</p>
 
-    <p><a href="/contact" target="_blank">Contactez-nous pour votre projet →</a></p>
+    <p><a href="/contact">Contactez-nous pour votre projet →</a></p>
 
-    <p><em>Écrit par <strong>Alayde Tech</strong> — Sites web pour associations et ONG.</em></p>
+    <p><em>Écrit par <strong>Alayde Tech</strong> — Sites web et solutions digitales pour associations et ONG.</em></p>
       `,
   },
 
@@ -242,38 +219,6 @@ export const posts = [
     `,
 },
 
-// ----- ARTICLE 9 : 5 raisons de digitaliser votre association -----
-{
-  slug: "5-raisons-digitaliser-association",
-  title: "5 raisons de digitaliser votre association",
-  description: "Digitaliser votre association vous permet de gagner du temps, d'optimiser vos ressources et de toucher plus de personnes.",
-  date: "2026-07-03",
-  author: "Alayde Tech",
-  tags: ["Digitalisation", "Association", "Gestion", "Communication"],
-  content: `
-  <h1>5 raisons de digitaliser votre association</h1>
-
-  <p>La digitalisation des associations est devenue un enjeu majeur. Voici 5 raisons de franchir le pas.</p>
-
-  <h2>1. Gagner du temps</h2>
-  <p>Automatisez les tâches répétitives (gestion des membres, envoi de newsletters, etc.).</p>
-
-  <h2>2. Optimiser les ressources</h2>
-  <p>Utilisez vos ressources humaines et financières de manière plus efficace.</p>
-
-  <h2>3. Améliorer la communication</h2>
-  <p>Communiquez plus facilement avec vos membres, bénévoles et partenaires.</p>
-
-  <h2>4. Toucher plus de personnes</h2>
-  <p>Un site web vous permet d'être visible 24h/24 et d'atteindre un public plus large.</p>
-
-  <h2>5. Renforcer la crédibilité</h2>
-  <p>Un site web professionnel renforce la crédibilité de votre association.</p>
-
-  <p><a href="/contact">Demandez un devis pour votre association →</a></p>
-    `,
-},
-
 // ----- ARTICLE 10 : Comment créer une landing page qui convertit -----
 {
   slug: "landing-page-convertit",
@@ -303,35 +248,6 @@ export const posts = [
   <p>Ajoutez des témoignages, des avis ou des certifications pour rassurer vos visiteurs.</p>
 
   <p><a href="/contact">Besoin d'une landing page sur mesure ? →</a></p>
-    `,
-},
-
-// ----- ARTICLE 11 : Solutions digitales pour les ONG -----
-{
-  slug: "solutions-digitales-ong",
-  title: "Solutions digitales pour les ONG",
-  description: "Comment les ONG peuvent utiliser les outils numériques pour optimiser leur gestion de projets et leur collecte de fonds.",
-  date: "2026-07-01",
-  author: "Alayde Tech",
-  tags: ["ONG", "Solutions digitales", "Collecte de fonds", "Gestion de projets"],
-  content: `
-  <h1>Solutions digitales pour les ONG</h1>
-
-  <p>Les ONG utilisent de plus en plus les outils numériques pour améliorer leur efficacité et leur impact.</p>
-
-  <h2>1. Gestion de projets</h2>
-  <p>Les outils de gestion de projets permettent de planifier, suivre et évaluer les actions sur le terrain.</p>
-
-  <h2>2. Collecte de fonds</h2>
-  <p>Les plateformes de don en ligne facilitent la collecte de fonds et élargissent le cercle des donateurs.</p>
-
-  <h2>3. Communication</h2>
-  <p>Les réseaux sociaux et les sites web permettent de communiquer de manière transparente et de mobiliser les soutiens.</p>
-
-  <h2>4. Suivi des bénéficiaires</h2>
-  <p>Les bases de données et les outils de suivi permettent de mesurer l'impact des actions menées.</p>
-
-  <p><a href="/contact">Contactez-nous pour vos projets ONG →</a></p>
     `,
 },
 
@@ -637,6 +553,161 @@ export const posts = [
     <p>Organiser un mariage au Bénin ou en Afrique de l'Ouest sans stress, c'est possible. Il suffit de bien planifier, de s'appuyer sur des outils modernes comme Eventvivo et d'anticiper les imprévus. Vous gagnerez en sérénité et votre journée restera un merveilleux souvenir.</p>
 
     <p><a href="https://eventvivo.com" target="_blank" rel="noopener noreferrer">Découvrir Eventvivo et créer votre événement gratuitement →</a></p>
+
+    <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions SaaS pour une gestion d'événements simplifiée.</em></p>
+  `
+},
+
+// ----- ARTICLE 18 : QR Code vs papier -----
+{
+  slug: "faire-part-numerique-qr-code-vs-papier",
+  title: "Pourquoi le faire-part numérique avec QR Code détrône les invitations papier",
+  description: "Découvrez pourquoi le faire-part numérique avec QR Code est plus moderne, économique et écologique que les invitations papier. Simplifiez l'organisation de vos événements.",
+  date: "2026-08-05",
+  author: "Alayde Tech",
+  tags: ["Faire-part numérique", "QR Code", "Invitation en ligne", "Écologie", "Économies", "Eventvivo"],
+  image: "/images/eventvivo.webp",
+  content: `
+    <h1>Pourquoi le faire-part numérique avec QR Code détrône les invitations papier</h1>
+
+    <p>Encore aujourd'hui, de nombreux couples hésitent : envoyer des invitations papier ou passer au numérique ?</p>
+
+    <p>Les faire-part papier sont beaux, certes. Mais ils coûtent cher, prennent du temps et finissent souvent oubliés dans un tiroir. Sans parler du gaspillage : des centaines de cartons imprimés pour que la moitié termine à la poubelle.</p>
+
+    <p>Le <strong>faire-part numérique avec QR Code</strong> arrive comme une évidence. Plus rapide, moins cher, plus écologique. Et il offre des avantages que le papier ne pourra jamais offrir : suivi en temps réel, confirmation instantanée, accès simplifié pour vos invités. Voici pourquoi cette tendance s'impose partout, y compris au Bénin et en Afrique de l'Ouest.</p>
+
+    <h2>Les limites des invitations papier classiques</h2>
+
+    <h3>1. Un coût élevé pour un résultat incertain</h3>
+    <p>Imprimer des faire-part, c'est un budget. Papier, enveloppes, timbres, frais d'impression… sans compter les retouches en cas d'erreur. Et si vous devez changer une information (date, lieu), tout est à recommencer.</p>
+
+    <h3>2. Un impact écologique considérable</h3>
+    <p>Chaque année, des tonnes de papier sont utilisées pour des invitations qui finissent à la poubelle. Pour un événement de 200 invités, c'est l'équivalent de plusieurs arbres abattus. À l'heure des engagements écologiques, le papier devient un choix lourd de conséquences.</p>
+
+    <h3>3. Une logistique compliquée</h3>
+    <p>Envoyer des invitations papier, c'est : acheter les enveloppes, écrire les adresses, affranchir, poster. Et ensuite ? Attendre que les invités répondent par téléphone ou SMS, sans aucune visibilité. Une perte de temps et d'énergie.</p>
+
+    <h2>Le faire-part numérique avec QR Code : une révolution pratique</h2>
+
+    <h3>1. Une invitation en ligne accessible en un clic</h3>
+    <p>Avec Eventvivo, créez votre <strong>invitation en ligne</strong> en quelques minutes. Personnalisez le design, ajoutez les informations essentielles, et partagez le lien par WhatsApp, email ou SMS.</p>
+    <p>Vos invités reçoivent un message, cliquent sur le lien, et confirment leur présence en 30 secondes. Plus besoin de courrier, plus d'attente.</p>
+
+    <h3>2. Le QR Code : l'accès simplifié pour vos invités</h3>
+    <p>Chaque invité reçoit un <strong>QR Code unique</strong>. À l'entrée de votre événement, il suffit de le scanner. C'est rapide, sécurisé, sans erreur. Fini les listes papier où on cherche un nom pendant 5 minutes.</p>
+    <p>Le <strong>QR Code événement</strong> garantit un accès fluide, même avec une centaine d'invités. Votre équipe d'accueil respire, vos invités aussi.</p>
+
+    <h3>3. Un suivi en temps réel</h3>
+    <p>Eventvivo vous offre un tableau de bord en direct. Vous voyez en temps réel :</p>
+    <ul>
+      <li>Combien d'invités ont confirmé</li>
+      <li>Qui a décliné</li>
+      <li>Qui n'a pas encore répondu</li>
+    </ul>
+    <p>Vous pouvez relancer automatiquement les retardataires, ajuster votre logistique (repas, places), et arriver le jour J sans stress.</p>
+
+    <h2>Écologique et économique : les atouts gagnants</h2>
+
+    <h3>1. Des économies substantielles</h3>
+    <p>Avec un <strong>faire-part numérique</strong>, vous <strong>économisez sur les faire-part</strong> imprimés. Pas de frais d'impression, pas de timbres, pas de réimpression en cas d'erreur.</p>
+    <p>Vous pouvez investir le budget économisé dans ce qui compte vraiment : le traiteur, la décoration, la musique.</p>
+
+    <h3>2. Un geste pour la planète</h3>
+    <p>En choisissant le numérique, vous réduisez votre empreinte carbone. Pas de papier, pas d'encre, pas de transport de cartons. Une démarche moderne qui séduit les couples soucieux de l'environnement.</p>
+    <p>Et vos invités ? Ils apprécient de recevoir une invitation pratique, facile à conserver sur leur téléphone, sans risque de l'égarer.</p>
+
+    <h2>Pourquoi Eventvivo est la meilleure solution</h2>
+
+    <ul>
+      <li><strong>Gratuit</strong> pour démarrer : créez votre événement sans engagement.</li>
+      <li><strong>100 % en ligne</strong> : accessible depuis votre téléphone, où que vous soyez.</li>
+      <li><strong>Populaire en Afrique de l'Ouest</strong> : de nombreux organisateurs l'utilisent déjà.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>Le <strong>faire-part numérique avec QR Code</strong> n'est plus une tendance : c'est une évidence. Plus économique, plus écologique, plus pratique. Vous simplifiez la vie de vos invités, vous réduisez votre stress, et vous faites un geste pour la planète.</p>
+
+    <p>Prêt à passer au numérique ? <a href="https://eventvivo.com" target="_blank" rel="noopener noreferrer">Créez votre événement sur Eventvivo →</a></p>
+
+    <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions SaaS pour une gestion d'événements moderne et responsable.</em></p>
+  `
+},
+
+// ----- ARTICLE 19 : RSVP pour anniversaires et retrouvailles -----
+{
+  slug: "rsvp-anniversaire-retrouvailles-amis-guide",
+  title: "RSVP : comment gérer les confirmations pour vos anniversaires et retrouvailles entre amis",
+  description: "Organiser un anniversaire, un pique-nique ou une Agô entre amis ? Découvrez comment le RSVP simplifie la gestion des invités et évite les mauvaises surprises.",
+  date: "2026-08-06",
+  author: "Alayde Tech",
+  tags: ["RSVP", "Anniversaire", "Retrouvailles", "Pique-nique", "Agô", "Gestion d'événements", "Eventvivo"],
+  image: "/images/eventvivo.webp",
+  content: `
+    <h1>RSVP : comment gérer les confirmations pour vos anniversaires et retrouvailles entre amis</h1>
+
+    <p>Vous organisez un anniversaire surprise pour votre meilleur ami ? Un pique-nique géant entre potes ? Une Agô (retrouvailles) pour ceux qui sont partis vivre loin ? Super idée !</p>
+
+    <p>Mais voilà : vous envoyez un message WhatsApp à 50 personnes. "Qui vient ?" Les réponses arrivent en vrac : des oui, des peut-être, des gens qui répondent "on verra", et surtout… des silences. Le jour J, vous avez préparé à manger pour 40 personnes, il n'en vient que 20. Ou l'inverse. C'est le stress.</p>
+
+    <p>Pourtant, une solution simple existe : le <strong>RSVP en ligne</strong>. Avec un outil comme <strong>Eventvivo</strong>, vos invités confirment leur présence en 30 secondes. Vous savez exactement qui vient, combien ils sont, et vous pouvez même les relancer automatiquement. Plus de stress, plus de gaspillage.</p>
+
+    <h2>Anniversaire, pique-nique, Agô : pourquoi les RSVP sont essentiels</h2>
+
+    <h3>1. Vous évitez les mauvaises surprises</h3>
+    <p>Rien de pire que de préparer un buffet pour 30 personnes et de se retrouver à 15. Ou d'organiser un jeu et de ne pas avoir assez d'équipes. Les <strong>confirmations de présence</strong> vous permettent d'adapter la logistique : quantité de nourriture, boissons, chaises, activités.</p>
+
+    <h3>2. Vous gagnez du temps</h3>
+    <p>Plus besoin de faire des listes sur papier ou de relancer chacun individuellement. Avec Eventvivo, vous avez une <strong>vue en temps réel</strong> de tous vos invités. Ceux qui ont confirmé, ceux qui ont décliné, ceux qui n'ont pas encore répondu. Vous pouvez les relancer automatiquement en un clic.</p>
+
+    <h3>3. Vous simplifiez la vie de vos invités</h3>
+    <p>Vos amis reçoivent une <strong>invitation en ligne</strong> claire et élégante. Ils confirment en 30 secondes, sans avoir à chercher un numéro de téléphone ou à écrire un long message. Ils peuvent même ajouter des remarques : "Je viens avec mon bébé", "Je suis végétarien", "J'amène des boissons".</p>
+
+    <h3>4. Vous réduisez le stress</h3>
+    <p>Savoir exactement qui vient, c'est une libération. Vous pouvez vous concentrer sur ce qui compte : profiter de vos amis, passer un bon moment, et célébrer comme il se doit.</p>
+
+    <h2>Comment Eventvivo transforme l'organisation de vos retrouvailles</h2>
+
+    <h3>1. Créez votre événement en 5 minutes</h3>
+    <p>Avec Eventvivo, c'est simple :</p>
+    <ul>
+      <li>Ajoutez les informations : date, heure, lieu, programme.</li>
+      <li>Dans votre galerie choisissez une photo de votre choix et télécharger la sur votre évenement créée.</li>
+      <li>Partagez le lien par WhatsApp, email ou SMS.</li>
+    </ul>
+
+    <h3>2. Vos invités confirment en un clic</h3>
+    <p>Chaque invité reçoit un lien. Il clique, voit les détails de l'événement, et confirme en appuyant sur "Je participe" ou "Je ne participe pas". Il peut aussi indiquer le nombre d'accompagnants.</p>
+
+    <h3>3. Vous gérez tout depuis votre téléphone</h3>
+    <p>Le tableau de bord Eventvivo est accessible sur votre téléphone. Vous voyez en direct :</p>
+    <ul>
+      <li>Le nombre de confirmations</li>
+      <li>Le nombre de déclinations</li>
+      <li>Les invités qui n'ont pas encore répondu</li>
+    </ul>
+
+    <h3>4. Un QR Code pour le jour J</h3>
+    <p>Pour un anniversaire ou une Agô avec beaucoup d'invités, le <strong>QR Code</strong> est un atout. Chaque invité reçoit un QR Code unique. À l'entrée, un simple scan valide sa présence. Fini les listes papier, l'accueil est fluide et rapide.</p>
+
+    <h2>Les bons réflexes pour maximiser vos RSVP</h2>
+
+    <h3>1. Envoyez l'invitation au bon moment</h3>
+    <p>Pour un anniversaire : 2 à 3 semaines avant. Pour un pique-nique ou une Agô : 1 à 2 semaines suffisent. Trop tôt, les gens oublient. Trop tard, ils sont déjà pris.</p>
+
+    <h2>Pourquoi Eventvivo est parfait pour vos événements entre amis</h2>
+
+    <ul>
+      <li><strong>Gratuit</strong> pour démarrer</li>
+      <li><strong>100 % en ligne</strong>, accessible depuis votre téléphone</li>
+      <li><strong>Simple d'utilisation</strong> : vos invités n'ont pas besoin de s'inscrire</li>
+      <li><strong>Adapté à tous vos événements</strong> : anniversaires, Agô, pique-niques, soirées</li>
+      <li><strong>Populaire en Afrique de l'Ouest</strong>, de nombreux jeunes l'utilisent déjà</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>Organiser un anniversaire, un pique-nique ou une Agô entre amis doit être un plaisir, pas un casse-tête. Avec Eventvivo et son système de <strong>RSVP en ligne</strong>, vous gérez vos invités sans stress. Vous savez qui vient, vous ajustez votre logistique, et vous profitez pleinement de vos retrouvailles.</p>
+
+    <p>Prêt à simplifier votre organisation ? <a href="https://eventvivo.com" target="_blank" rel="noopener noreferrer">Créez votre événement sur Eventvivo →</a></p>
 
     <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions SaaS pour une gestion d'événements simplifiée.</em></p>
   `
