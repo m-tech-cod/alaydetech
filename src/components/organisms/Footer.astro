@@ -1,4 +1,5 @@
 ---
+import Icon from "../atoms/Icon.astro";
 const currentYear = new Date().getFullYear();
 ---
 
@@ -15,8 +16,13 @@ const currentYear = new Date().getFullYear();
             class="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover bg-white border-2 border-[#F59E0B] shadow-md hover:shadow-xl hover:scale-105 hover:border-[#1E3A8A] transition-all duration-300 ease-in-out p-1"
           />
         </a>
-        <p class="text-sm text-white/60 max-w-xs">
-          Alayde Tech, un code utile ici, et au-delà 💻🌎🌿
+        <p class="text-sm text-white/60 max-w-xs flex items-center gap-2 flex-wrap">
+          <span>Alayde Tech, un code utile ici, et au-delà</span>
+          <span class="inline-flex items-center gap-1.5 text-[#F59E0B]">
+            <Icon name="laptop" class="w-4 h-4" />
+            <Icon name="globe" class="w-4 h-4" />
+            <Icon name="leaf" class="w-4 h-4" />
+          </span>
         </p>
         <div class="mt-4 text-xs text-white/30 space-y-1">
           <p>RCCM : RB/PNO/26 A 126770</p>

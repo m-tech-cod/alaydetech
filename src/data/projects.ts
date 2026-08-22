@@ -29,6 +29,15 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: 2,
+    title: "Ya Tchégbo",
+    description: "Site vitrine pour Ya Tchégbo, association franco-béninoise qui accueille, héberge et accompagne les femmes victimes de violences ainsi que leurs enfants, vers la reconstruction et l'autonomie.",
+    category: "association",
+    image: "/images/yatchegbo.webp",
+    link: "https://yatchegbo.com",
+    featured: true,
+  },
+  {
     id: 3,
     title: "Marathon Commercial de Cotonou 2026",
     description: "Landing page officielle pour l'événement business organisé par l'Association Élite de Akossiwa (AEA).",

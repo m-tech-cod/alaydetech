@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const canonicalURL = `https://alaydetech.com/blog/${post.slug}`;
 const currentUrl = Astro.url.href;
-const shareText = encodeURIComponent(`📖 ${post.title} - ALAYDE TECH`);
+const shareText = encodeURIComponent(`${post.title} - ALAYDE TECH`);
 const shareUrl = encodeURIComponent(currentUrl);
 const whatsappUrl = `https://wa.me/?text=${shareText}%20${shareUrl}`;
 ---

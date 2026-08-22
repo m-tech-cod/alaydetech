@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Icon from "../../components/atoms/Icon.astro";
 ---
 
 <BaseLayout title="À propos" description="Découvrez Alayde Tech, notre vision et nos engagements.">
@@ -17,8 +18,9 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
     <!-- Contenu Hero -->
     <div class="relative z-10 max-w-5xl mx-auto text-center">
-      <span class="inline-block bg-[#F59E0B]/20 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm">
-        ✦ Notre histoire
+      <span class="inline-flex items-center gap-1.5 bg-[#F59E0B]/20 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm">
+        <Icon name="sparkle" class="w-3.5 h-3.5" />
+        Notre histoire
       </span>
       <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight drop-shadow-lg">
         La technologie au <br />
@@ -49,21 +51,21 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </p>
         <div class="mt-6 space-y-3">
           <div class="flex items-center gap-3">
-            <div class="w-6 h-6 bg-[#F59E0B]/20 rounded-full flex items-center justify-center text-[#F59E0B] text-sm">✓</div>
+            <div class="w-6 h-6 bg-[#F59E0B]/20 rounded-full flex items-center justify-center text-[#F59E0B]"><Icon name="check" class="w-3.5 h-3.5" /></div>
             <span class="text-[#64748B]">Des solutions sur mesure</span>
           </div>
           <div class="flex items-center gap-3">
-            <div class="w-6 h-6 bg-[#F59E0B]/20 rounded-full flex items-center justify-center text-[#F59E0B] text-sm">✓</div>
+            <div class="w-6 h-6 bg-[#F59E0B]/20 rounded-full flex items-center justify-center text-[#F59E0B]"><Icon name="check" class="w-3.5 h-3.5" /></div>
             <span class="text-[#64748B]">Une approche centrée utilisateur</span>
           </div>
           <div class="flex items-center gap-3">
-            <div class="w-6 h-6 bg-[#F59E0B]/20 rounded-full flex items-center justify-center text-[#F59E0B] text-sm">✓</div>
+            <div class="w-6 h-6 bg-[#F59E0B]/20 rounded-full flex items-center justify-center text-[#F59E0B]"><Icon name="check" class="w-3.5 h-3.5" /></div>
             <span class="text-[#64748B]">Un engagement pour l'impact social</span>
           </div>
         </div>
       </div>
       <div class="bg-gradient-to-br from-[#1E3A8A] to-[#2D4FA8] rounded-3xl p-8 text-white">
-        <div class="text-5xl mb-4">💡</div>
+        <div class="mb-4"><Icon name="lightbulb" class="w-12 h-12" /></div>
         <h3 class="text-2xl font-bold">"La tech, c'est du vivant"</h3>
         <p class="text-white/80 mt-2 text-sm leading-relaxed">
           Derrière chaque ligne de code, il y a une volonté de créer des solutions utiles, durables et accessibles à tous.
@@ -86,22 +88,22 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
       <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 text-center group">
-        <div class="w-16 h-16 bg-[#1E3A8A]/10 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4 group-hover:bg-[#1E3A8A] group-hover:text-white transition-all duration-300">💡</div>
+        <div class="w-16 h-16 bg-[#1E3A8A]/10 rounded-2xl flex items-center justify-center text-[#1E3A8A] mx-auto mb-4 group-hover:bg-[#1E3A8A] group-hover:text-white transition-all duration-300"><Icon name="lightbulb" class="w-8 h-8" /></div>
         <h3 class="text-lg font-semibold text-[#1E3A8A]">Innovation</h3>
         <p class="text-sm text-[#64748B] mt-2 leading-relaxed">Nous repoussons les limites pour vous offrir des solutions avant-gardistes.</p>
       </div>
       <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 text-center group">
-        <div class="w-16 h-16 bg-[#10B981]/10 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4 group-hover:bg-[#10B981] group-hover:text-white transition-all duration-300">⚡</div>
+        <div class="w-16 h-16 bg-[#10B981]/10 rounded-2xl flex items-center justify-center text-[#10B981] mx-auto mb-4 group-hover:bg-[#10B981] group-hover:text-white transition-all duration-300"><Icon name="bolt" class="w-8 h-8" /></div>
         <h3 class="text-lg font-semibold text-[#1E3A8A]">Technologie</h3>
         <p class="text-sm text-[#64748B] mt-2 leading-relaxed">Nous utilisons les meilleurs outils pour garantir performance et fiabilité.</p>
       </div>
       <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 text-center group">
-        <div class="w-16 h-16 bg-[#F59E0B]/10 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4 group-hover:bg-[#F59E0B] group-hover:text-white transition-all duration-300">🎨</div>
+        <div class="w-16 h-16 bg-[#F59E0B]/10 rounded-2xl flex items-center justify-center text-[#F59E0B] mx-auto mb-4 group-hover:bg-[#F59E0B] group-hover:text-white transition-all duration-300"><Icon name="palette" class="w-8 h-8" /></div>
         <h3 class="text-lg font-semibold text-[#1E3A8A]">Créativité</h3>
         <p class="text-sm text-[#64748B] mt-2 leading-relaxed">Chaque projet est unique, pensé pour se démarquer.</p>
       </div>
       <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 text-center group">
-        <div class="w-16 h-16 bg-[#1E3A8A]/10 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4 group-hover:bg-[#1E3A8A] group-hover:text-white transition-all duration-300">🎯</div>
+        <div class="w-16 h-16 bg-[#1E3A8A]/10 rounded-2xl flex items-center justify-center text-[#1E3A8A] mx-auto mb-4 group-hover:bg-[#1E3A8A] group-hover:text-white transition-all duration-300"><Icon name="target" class="w-8 h-8" /></div>
         <h3 class="text-lg font-semibold text-[#1E3A8A]">Professionnalisme</h3>
         <p class="text-sm text-[#64748B] mt-2 leading-relaxed">La rigueur et la qualité sont au cœur de notre démarche.</p>
       </div>

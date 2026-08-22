@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { posts } from "../../data/posts";
+import Icon from "../../components/atoms/Icon.astro";
 ---
 
 <BaseLayout title="Blog" description="Articles et réflexions d'Alayde Tech sur le développement web et l'innovation numérique.">
@@ -40,8 +41,8 @@ import { posts } from "../../data/posts";
           href={`/blog/${post.slug}`}
           class={`group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-[#E2E8F0] animate-fade-in-up animate-delay-${(index % 3) + 1}`}
         >
-          <div class="h-48 bg-gradient-to-br from-[#1E3A8A]/10 to-[#F59E0B]/10 flex items-center justify-center text-5xl">
-            📝
+          <div class="h-48 bg-gradient-to-br from-[#1E3A8A]/10 to-[#F59E0B]/10 flex items-center justify-center text-[#1E3A8A]/40">
+            <Icon name="book-open" class="w-12 h-12" />
           </div>
           <div class="p-6">
             <div class="flex items-center gap-3 text-sm text-[#64748B] mb-3">
@@ -53,8 +54,9 @@ import { posts } from "../../data/posts";
               {post.title}
             </h2>
             <p class="text-[#64748B] text-sm mt-2 line-clamp-2">{post.description}</p>
-            <span class="inline-block mt-4 text-sm font-medium text-[#1E3A8A] group-hover:text-[#F59E0B] transition">
-              Lire l'article →
+            <span class="inline-flex items-center gap-1 mt-4 text-sm font-medium text-[#1E3A8A] group-hover:text-[#F59E0B] transition">
+              Lire l'article
+              <Icon name="arrow-right" class="w-4 h-4" />
             </span>
           </div>
         </a>

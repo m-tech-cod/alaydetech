@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { projects } from "../../data/projects";
+import Icon from "../../components/atoms/Icon.astro";
 
 const categories = ["Tous", ...new Set(projects.map(p => p.category))];
 ---
@@ -64,7 +65,7 @@ const categories = ["Tous", ...new Set(projects.map(p => p.category))];
                   loading="lazy"
                 />
               ) : (
-                <span class="text-4xl" aria-hidden="true">🚀</span>
+                <Icon name="rocket" class="w-10 h-10 text-[#1E3A8A]/40" />
               )}
               <div class="absolute inset-0 bg-[#1E3A8A]/0 group-hover:bg-[#1E3A8A]/20 transition duration-500"></div>
             </div>
@@ -79,8 +80,9 @@ const categories = ["Tous", ...new Set(projects.map(p => p.category))];
               </h3>
               <p class="text-[#64748B] text-sm mt-1 line-clamp-2">{project.description}</p>
               {!isUpcoming && (
-                <span class="inline-block mt-3 text-sm font-medium text-[#1E3A8A] group-hover:text-[#F59E0B] transition">
-                  Voir le projet →
+                <span class="inline-flex items-center gap-1 mt-3 text-sm font-medium text-[#1E3A8A] group-hover:text-[#F59E0B] transition">
+                  Voir le projet
+                  <Icon name="arrow-right" class="w-4 h-4" />
                 </span>
               )}
             </div>
