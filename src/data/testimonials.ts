@@ -23,5 +23,12 @@ export const testimonials = [
     rating: 5,
     logo: "/images/burkina.webp",
   },
-  
+  {
+    id: 4,
+    name: "Fondatrice de Ya Tchégbo",
+    role: "Association Ya Tchégbo",
+    content: "Alayde Tech a su créer un site qui reflète avec justesse et dignité la mission de Ya Tchégbo. Il nous permet de présenter notre engagement auprès des femmes et des enfants que nous accompagnons, tout en facilitant la prise de contact avec nos partenaires et donateurs. Une équipe à l'écoute et respectueuse de la sensibilité de notre cause.",
+    rating: 5,
+    logo: "/images/yatchegbo.webp",
+  },
 ];

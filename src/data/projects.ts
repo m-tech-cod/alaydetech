@@ -22,7 +22,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "Eventvivo",
-    description: "Invitations numériques, RSVP, QR Codes et suivi des invités en temps réel. Créez votre événement gratuitement (mariage, anniversaire, baptême, dot, etc.).",
+    description: "Invitations numériques, billetterie en ligne, RSVP, QR Codes et suivi des invités en temps réel. Créez votre événement gratuitement (mariage, anniversaire, baptême, dot, etc.).",
     category: "saas",
     image: "/images/eventvivo.webp",
     link: "https://eventvivo.com",
