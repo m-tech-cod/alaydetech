@@ -9,6 +9,19 @@ const navItems = [
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100/50 transition-all duration-300">
+  <a
+    href="https://eventvivo.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="announce-bar relative flex items-center justify-center gap-2 h-9 px-4 bg-gradient-to-r from-[#1E3A8A] to-[#3B5BC4] text-white text-xs sm:text-sm font-medium overflow-hidden"
+  >
+    <span class="announce-sheen" aria-hidden="true"></span>
+    <span class="w-1.5 h-1.5 rounded-full bg-[#F59E0B] flex-shrink-0"></span>
+    <span class="truncate">Nouveau · Vendez vos billets en ligne avec <span class="font-bold underline underline-offset-2">Eventvivo</span></span>
+    <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </a>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16 md:h-20">
       
@@ -55,7 +68,7 @@ const navItems = [
 </header>
 
 <!-- Menu mobile -->
-<div id="mobile-menu" class="fixed inset-0 bg-white z-40 pt-20 px-6 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+<div id="mobile-menu" class="fixed inset-0 bg-white z-40 pt-[6.25rem] px-6 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
   <div class="flex flex-col items-center gap-6 text-lg">
     {navItems.map((item) => (
       <a 
@@ -75,6 +88,31 @@ const navItems = [
     </a>
   </div>
 </div>
+
+<style>
+  .announce-sheen {
+    position: absolute;
+    top: 0;
+    left: -30%;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+    animation: announce-sheen-move 4.5s ease-in-out infinite;
+  }
+
+  @keyframes announce-sheen-move {
+    0% { left: -30%; }
+    45% { left: 130%; }
+    100% { left: 130%; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .announce-sheen {
+      animation: none;
+      display: none;
+    }
+  }
+</style>
 
 <script>
   const toggle = document.getElementById('menu-toggle');
