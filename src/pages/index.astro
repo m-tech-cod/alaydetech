@@ -1,5 +1,4 @@
 ---
-import { testimonials } from "../data/testimonials";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { projects } from "../data/projects";
 import Icon from "../components/atoms/Icon.astro";
@@ -199,44 +198,6 @@ import Icon from "../components/atoms/Icon.astro";
     </div>
   </section>
 
-  <!-- Témoignages -->
-  <section class="reveal py-16 px-4 max-w-6xl mx-auto overflow-hidden">
-    <div class="text-center mb-12">
-      <span class="text-sm font-semibold text-[#F59E0B] uppercase tracking-wider">Témoignages</span>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A] mt-2">
-        Ce qu'ils disent de <span class="text-[#F59E0B]">nous</span>
-      </h2>
-      <p class="text-[#64748B] mt-4 max-w-2xl mx-auto">Des retours de nos clients et partenaires sur nos réalisations.</p>
-    </div>
-
-    <div class="relative overflow-hidden">
-      <div class="flex gap-6 animate-scroll" style="width: max-content;">
-        {[...testimonials, ...testimonials].map((testimonial, index) => (
-          <div key={index} class="bg-white rounded-2xl shadow-lg p-6 border border-[#E2E8F0] w-[280px] sm:w-[320px] flex-shrink-0 hover:shadow-xl transition">
-            <div class="flex items-center gap-4 mb-4">
-              {testimonial.logo ? (
-                <img src={testimonial.logo} alt={testimonial.name} class="w-12 h-12 object-contain rounded-xl bg-white p-1 border border-[#E2E8F0]" />
-              ) : (
-                <div class="w-12 h-12 bg-[#1E3A8A]/10 rounded-full flex items-center justify-center text-xl font-semibold text-[#1E3A8A]">
-                  {testimonial.name.charAt(0)}
-                </div>
-              )}
-              <div>
-                <h4 class="text-sm font-semibold text-[#1E3A8A]">{testimonial.name}</h4>
-                <p class="text-xs text-[#64748B]">{testimonial.role}</p>
-              </div>
-            </div>
-            <div class="flex gap-0.5 text-[#F59E0B] mb-2">
-              {Array.from({ length: 5 }).map((_, starIndex) => (
-                <Icon name={starIndex < testimonial.rating ? "star" : "star-outline"} class="w-4 h-4" />
-              ))}
-            </div>
-            <p class="text-sm text-[#64748B] leading-relaxed">"{testimonial.content}"</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
 
   <!-- CTA avec image de fond et zoom -->
   <section class="reveal py-16 px-4 max-w-6xl mx-auto">
