@@ -43,19 +43,19 @@ export const posts = [
     `,
   },
 
-  // ----- ARTICLE : Études de cas ICMDA + Burkina Humanitaire + Ya Tchégbo -----
+  // ----- ARTICLE : Études de cas ICMDA + Burkina Humanitaire -----
   {
     slug: "site-web-association-humanitaire-icmda",
-    title: "3 associations qui ont transformé leur impact grâce au web : ICMDA, Burkina Humanitaire et Ya Tchégbo",
-    description: "Trois études de cas d'associations humanitaires accompagnées par Alayde Tech : ICMDA, Burkina Humanitaire et Ya Tchégbo. Découvrez comment un site web a renforcé leur crédibilité, leur visibilité et leur capacité à mobiliser.",
+    title: "2 associations qui ont transformé leur impact grâce au web : ICMDA et Burkina Humanitaire",
+    description: "Deux études de cas d'associations humanitaires accompagnées par Alayde Tech : ICMDA et Burkina Humanitaire. Découvrez comment un site web a renforcé leur crédibilité, leur visibilité et leur capacité à mobiliser.",
     date: "2026-08-08",
     author: "Alayde Tech",
-    tags: ["Association humanitaire", "Site web ONG", "ICMDA", "Burkina Humanitaire", "Ya Tchégbo", "Étude de cas", "Crédibilité"],
+    tags: ["Association humanitaire", "Site web ONG", "ICMDA", "Burkina Humanitaire", "Étude de cas", "Crédibilité"],
     image: "/images/icmda.webp",
     content: `
-    <h1>3 associations qui ont transformé leur impact grâce au web</h1>
+    <h1>2 associations qui ont transformé leur impact grâce au web</h1>
 
-    <p>Dans un monde de plus en plus connecté, la présence en ligne est devenue indispensable pour les associations et ONG. Un site web bien conçu renforce la crédibilité, attire les donateurs et facilite la communication avec les parties prenantes. Voici trois exemples concrets d'associations accompagnées par <strong>Alayde Tech</strong>, chacune avec des besoins différents mais un même objectif : maximiser leur impact grâce au numérique.</p>
+    <p>Dans un monde de plus en plus connecté, la présence en ligne est devenue indispensable pour les associations et ONG. Un site web bien conçu renforce la crédibilité, attire les donateurs et facilite la communication avec les parties prenantes. Voici deux exemples concrets d'associations accompagnées par <strong>Alayde Tech</strong>, chacune avec des besoins différents mais un même objectif : maximiser leur impact grâce au numérique.</p>
 
     <h2>1. ICMDA : valoriser l'action humanitaire à l'international</h2>
 
@@ -82,22 +82,9 @@ export const posts = [
 
     <p><a href="https://burkinahumanitaire.vercel.app/" target="_blank">Découvrir le site de Burkina Humanitaire ${arrowSvg}</a></p>
 
-    <h2>3. Ya Tchégbo : protéger les femmes victimes de violences et leurs enfants</h2>
+    <h2>Ce que ces deux projets ont en commun</h2>
 
-    <p>Ya Tchégbo est une association franco-béninoise fondée en 2016, reconnue officiellement au Bénin depuis 2017, qui accueille, héberge et accompagne les femmes victimes de violences ainsi que leurs enfants. Le site conçu par Alayde Tech pour Ya Tchégbo met en lumière :</p>
-
-    <ul>
-      <li><strong>La mission de l'association</strong> : accueil, protection et accompagnement global vers la reconstruction et l'autonomie.</li>
-      <li><strong>L'hébergement sécurisé</strong> proposé aux femmes et à leurs enfants.</li>
-      <li><strong>Les opportunités</strong> de bénévolat et de don pour soutenir l'association.</li>
-      <li><strong>Les partenariats</strong> et collaborations qui renforcent son action.</li>
-    </ul>
-
-    <p><a href="https://yatchegbo.com" target="_blank">Découvrir le site de Ya Tchégbo ${arrowSvg}</a></p>
-
-    <h2>Ce que ces trois projets ont en commun</h2>
-
-    <p>Malgré leurs missions différentes (action humanitaire internationale, éducation, protection des femmes et des enfants), ICMDA, Burkina Humanitaire et Ya Tchégbo partagent les mêmes bénéfices depuis la mise en ligne de leur site :</p>
+    <p>Malgré leurs missions différentes (action humanitaire internationale, éducation), ICMDA et Burkina Humanitaire partagent les mêmes bénéfices depuis la mise en ligne de leur site :</p>
 
     <ul>
       <li>Visibilité internationale, accessible 24h/24</li>
@@ -717,164 +704,6 @@ export const posts = [
     <p>Prêt à simplifier votre organisation ? <a href="https://eventvivo.com" target="_blank" rel="noopener noreferrer">Créez votre événement sur Eventvivo ${arrowSvg}</a></p>
 
     <p><em>Écrit par <strong>Alayde Tech</strong> — Solutions SaaS pour une gestion d'événements simplifiée.</em></p>
-  `
-},
-
-// ----- ARTICLE 20 : Ya Tchégbo, présentation -----
-{
-  slug: "yatchegbo-association-femmes-victimes-violences-benin",
-  title: "Ya Tchégbo : l'association franco-béninoise qui protège les femmes victimes de violences",
-  description: "Découvrez Ya Tchégbo, association franco-béninoise fondée en 2016, qui accueille, héberge et accompagne les femmes victimes de violences ainsi que leurs enfants vers la reconstruction et l'autonomie.",
-  date: "2026-08-15",
-  author: "Alayde Tech",
-  tags: ["Ya Tchégbo", "Violences faites aux femmes", "Association Bénin", "Hébergement femmes", "Protection des femmes et des enfants", "Bénin", "Soutien psychologique", "Insertion professionnelle"],
-  image: "/images/yatchegbo.webp",
-  content: `
-    <h1>Ya Tchégbo : l'association franco-béninoise qui protège les femmes victimes de violences</h1>
-
-    <p>Chaque année, des milliers de femmes en Afrique de l'Ouest subissent des violences conjugales, familiales ou sociales, souvent dans l'isolement et le silence. Trouver un lieu sûr pour se protéger, se reconstruire et repartir sur de nouvelles bases reste un défi majeur. Au Bénin, c'est précisément ce vide que <strong>Ya Tchégbo</strong> a choisi de combler.</p>
-
-    <h2>Une association née d'un engagement fort</h2>
-
-    <p><strong>Ya Tchégbo</strong> est une association franco-béninoise fondée en 2016 à l'initiative de <strong>Karine Bonnifait</strong>, entourée d'une équipe de bénévoles engagé·e·s. Reconnue officiellement au Bénin depuis 2017, l'association s'est donné pour vocation d'accueillir, protéger et accompagner les femmes victimes de violences, ainsi que leurs enfants, afin de favoriser leur reconstruction et leur réinsertion sociale et professionnelle durable.</p>
-
-    <h2>Que signifie « Ya Tchégbo » ?</h2>
-
-    <p>Le nom de l'association tire son origine du <strong>fon</strong>, une langue parlée au Bénin. « Ya Tchégbo » signifie littéralement <em>« mes souffrances sont passées »</em>. Une phrase choisie comme un symbole : celui du passage de la douleur vers la reconstruction, de la vulnérabilité vers l'autonomie retrouvée.</p>
-
-    <h2>Notre mission : accueillir, protéger, accompagner</h2>
-
-    <p>Face aux violences faites aux femmes, la mise en sécurité constitue souvent la première étape indispensable d'un parcours de reconstruction. C'est pourquoi Ya Tchégbo articule son action autour de trois piliers :</p>
-
-    <ul>
-      <li><strong>Accueillir</strong> les femmes adultes victimes de violences ainsi que leurs enfants, sans jugement et dans le respect de leur parcours.</li>
-      <li><strong>Protéger</strong> grâce à un hébergement sécurisé, offrant un cadre stable pour se mettre à l'abri du danger.</li>
-      <li><strong>Accompagner</strong> globalement chaque femme vers la reconstruction, la réinsertion sociale et professionnelle, et l'autonomisation durable.</li>
-    </ul>
-
-    <h2>Un accompagnement complet, en lien avec les structures partenaires</h2>
-
-    <p>En complémentarité avec les dispositifs existants et en lien avec les structures partenaires, Ya Tchégbo accompagne chaque femme dans toutes les étapes de son parcours :</p>
-
-    <ul>
-      <li><strong>Soutien psychologique</strong> pour traiter les traumatismes liés aux violences subies.</li>
-      <li><strong>Accompagnement socio-éducatif</strong> pour reconstruire des repères stables au quotidien.</li>
-      <li><strong>Accès aux droits</strong> pour faire valoir sa situation et se protéger durablement.</li>
-      <li><strong>Suivi médical</strong> pour prendre soin de sa santé et de celle de ses enfants.</li>
-      <li><strong>Insertion professionnelle</strong> pour retrouver progressivement son indépendance financière.</li>
-    </ul>
-
-    <p>L'objectif : permettre à chaque femme accueillie de retrouver progressivement son autonomie et de construire un projet de vie durable.</p>
-
-    <h2>Un besoin longtemps resté sans réponse au Bénin</h2>
-
-    <p>Au Bénin, les femmes adultes victimes de violences ont longtemps manqué d'une solution d'hébergement spécialisée leur permettant de se protéger et d'entamer un processus de réinsertion. Ya Tchégbo répond à ce besoin essentiel en leur offrant un espace sécurisé, un accompagnement adapté à chaque situation et un cadre propice à l'autonomisation.</p>
-
-    <h2>Soutenir Ya Tchégbo</h2>
-
-    <p>Que ce soit par le bénévolat, le don ou la mise en relation avec des partenaires, chaque soutien contribue directement à la protection et à la reconstruction des femmes et des enfants accompagnés par l'association.</p>
-
-    <p><a href="https://yatchegbo.com" target="_blank" rel="noopener noreferrer">Découvrir Ya Tchégbo ${arrowSvg}</a></p>
-
-    <p><em>Écrit par <strong>Alayde Tech</strong> — Sites web pour associations engagées dans la protection des femmes et des enfants.</em></p>
-  `
-},
-
-// ----- ARTICLE 21 : Violences faites aux femmes au Bénin, hébergement sécurisé -----
-{
-  slug: "violences-faites-aux-femmes-benin-hebergement-securise",
-  title: "Violences faites aux femmes au Bénin : pourquoi l'hébergement sécurisé est la première étape vers la reconstruction",
-  description: "Au Bénin, les femmes victimes de violences ont longtemps manqué de solutions d'hébergement spécialisées. Découvrez pourquoi la mise en sécurité est essentielle, et comment l'association Ya Tchégbo y répond concrètement.",
-  date: "2026-08-16",
-  author: "Alayde Tech",
-  tags: ["Violences conjugales", "Hébergement femmes victimes de violences", "Bénin", "Protection des femmes", "Ya Tchégbo", "Afrique de l'Ouest", "Accès aux droits", "Suivi médical"],
-  image: "/images/yatchegbo.webp",
-  content: `
-    <h1>Violences faites aux femmes au Bénin : pourquoi l'hébergement sécurisé change tout</h1>
-
-    <p>Quitter une situation de violence n'est jamais un choix simple. Sans solution d'hébergement, beaucoup de femmes se retrouvent contraintes de rester dans un environnement dangereux, faute d'alternative sûre pour elles et leurs enfants. C'est un constat que l'association béninoise <strong>Ya Tchégbo</strong> connaît bien, et auquel elle apporte une réponse concrète.</p>
-
-    <h2>La mise en sécurité, premier maillon de la reconstruction</h2>
-
-    <p>Face aux violences faites aux femmes, la mise en sécurité constitue souvent la première étape d'un parcours de reconstruction. Avant de pouvoir envisager un accompagnement psychologique, social ou professionnel, une femme victime de violences a besoin d'un lieu où elle n'est plus en danger, pour elle-même comme pour ses enfants.</p>
-
-    <p>Sans cette étape essentielle, toute tentative de reconstruction reste fragile : le simple fait de devoir retourner chaque soir dans un foyer violent empêche d'avancer sereinement vers l'autonomie.</p>
-
-    <h2>Un manque criant de solutions au Bénin</h2>
-
-    <p>Au Bénin, les femmes adultes victimes de violences ont longtemps manqué d'une solution d'hébergement spécialisée leur permettant de se protéger et d'entamer un processus de réinsertion. Ce vide laissait de nombreuses femmes sans recours, contraintes de choisir entre le danger et la précarité.</p>
-
-    <h2>La réponse de Ya Tchégbo</h2>
-
-    <p>Fondée en 2016 par Karine Bonnifait et reconnue officiellement au Bénin depuis 2017, l'association <strong>Ya Tchégbo</strong> répond à ce besoin essentiel en offrant aux femmes victimes de violences et à leurs enfants :</p>
-
-    <ul>
-      <li><strong>Un espace sécurisé</strong> pour se mettre à l'abri du danger.</li>
-      <li><strong>Un accompagnement adapté</strong> à la situation spécifique de chaque femme accueillie.</li>
-      <li><strong>Un cadre propice à l'autonomisation</strong>, pensé pour préparer la reconstruction et la réinsertion sociale et professionnelle.</li>
-    </ul>
-
-    <p>Cet accompagnement, mené en complémentarité avec les dispositifs existants et en lien avec les structures partenaires, couvre plusieurs dimensions : <strong>soutien psychologique</strong>, <strong>accompagnement socio-éducatif</strong>, <strong>accès aux droits</strong>, <strong>suivi médical</strong> et <strong>insertion professionnelle</strong>.</p>
-
-    <h2>Pourquoi ce modèle fait la différence</h2>
-
-    <p>En combinant hébergement sécurisé et accompagnement global, Ya Tchégbo ne se contente pas de mettre les femmes à l'abri : l'association les aide à se reconstruire durablement, afin qu'elles puissent, à leur rythme, retrouver leur autonomie et se réinsérer socialement et professionnellement.</p>
-
-    <p><a href="https://yatchegbo.com" target="_blank" rel="noopener noreferrer">Découvrir la mission de Ya Tchégbo ${arrowSvg}</a></p>
-
-    <p><em>Écrit par <strong>Alayde Tech</strong> — Sites web pour associations engagées dans la protection des femmes et des enfants.</em></p>
-  `
-},
-
-// ----- ARTICLE 22 : De la protection à l'autonomie -----
-{
-  slug: "reconstruction-reinsertion-femmes-victimes-violences-yatchegbo",
-  title: "De la protection à l'autonomie : le parcours de reconstruction des femmes accompagnées par Ya Tchégbo",
-  description: "Comment une femme victime de violences peut-elle se reconstruire et retrouver son autonomie ? Découvrez le modèle d'accompagnement global proposé par l'association béninoise Ya Tchégbo, de l'hébergement sécurisé à la réinsertion sociale et professionnelle.",
-  date: "2026-08-17",
-  author: "Alayde Tech",
-  tags: ["Reconstruction", "Autonomisation des femmes", "Réinsertion sociale et professionnelle", "Ya Tchégbo", "Bénin", "Accompagnement socio-éducatif", "Soutien psychologique"],
-  image: "/images/yatchegbo.webp",
-  content: `
-    <h1>De la protection à l'autonomie : le parcours de reconstruction des femmes accompagnées par Ya Tchégbo</h1>
-
-    <p>Se reconstruire après des violences ne se limite pas à trouver un toit. C'est un chemin, souvent long, qui mène de la mise en sécurité à l'autonomie retrouvée. Au Bénin, l'association <strong>Ya Tchégbo</strong> a bâti son action autour de cette idée : protéger n'est que le point de départ.</p>
-
-    <h2>Une association tournée vers l'autonomisation durable</h2>
-
-    <p>Fondée en 2016 par Karine Bonnifait et reconnue officiellement au Bénin depuis 2017, Ya Tchégbo a pour mission d'accueillir, protéger et accompagner les femmes victimes de violences, ainsi que leurs enfants, afin de favoriser leur <strong>reconstruction</strong> et leur <strong>réinsertion sociale et professionnelle durable</strong>.</p>
-
-    <h2>Étape 1 : l'accueil et la mise en sécurité</h2>
-
-    <p>Tout commence par l'accueil de la femme et, le cas échéant, de ses enfants, dans un cadre bienveillant. Grâce à un hébergement sécurisé, elles disposent d'un espace où se protéger du danger et retrouver un minimum de stabilité, condition indispensable avant toute autre démarche.</p>
-
-    <h2>Étape 2 : un accompagnement global adapté à chaque situation</h2>
-
-    <p>Chaque parcours de vie est différent, chaque violence subie laisse des marques différentes. C'est pourquoi Ya Tchégbo propose un accompagnement global et adapté, pensé pour répondre aux besoins spécifiques de chaque femme accueillie, dans un cadre propice à l'autonomisation. En complémentarité avec les dispositifs existants et en lien avec les structures partenaires, cet accompagnement couvre :</p>
-
-    <ul>
-      <li><strong>Le soutien psychologique</strong>, pour traiter les traumatismes liés aux violences subies.</li>
-      <li><strong>L'accompagnement socio-éducatif</strong>, pour retrouver des repères stables au quotidien.</li>
-      <li><strong>L'accès aux droits</strong>, pour faire valoir sa situation en toute sécurité.</li>
-      <li><strong>Le suivi médical</strong>, pour prendre soin de sa santé et de celle de ses enfants.</li>
-      <li><strong>L'insertion professionnelle</strong>, pour préparer une indépendance financière durable.</li>
-    </ul>
-
-    <h2>Étape 3 : la reconstruction et la réinsertion</h2>
-
-    <p>L'objectif final de l'accompagnement est de permettre à chaque femme de retrouver progressivement son autonomie, et de se réinsérer durablement sur le plan social et professionnel. Ce n'est qu'à ce prix que le passage par l'association devient une étape transitoire vers une vie stable et indépendante, loin de la violence subie.</p>
-
-    <h2>Un nom qui porte cet espoir</h2>
-
-    <p>Le nom de l'association, tiré du fon, une langue du Bénin, résume à lui seul cette trajectoire : « Ya Tchégbo » signifie <em>« mes souffrances sont passées »</em>. Une promesse portée par une équipe de bénévoles engagé·e·s, au service des femmes et des enfants qu'elle accompagne.</p>
-
-    <h2>Comment contribuer à cette mission</h2>
-
-    <p>Le travail de reconstruction mené par Ya Tchégbo repose sur l'engagement de bénévoles et le soutien de donateurs et de partenaires. Chaque contribution, quelle que soit sa forme, aide directement des femmes et des enfants à retrouver un avenir.</p>
-
-    <p><a href="https://yatchegbo.com" target="_blank" rel="noopener noreferrer">Soutenir Ya Tchégbo ${arrowSvg}</a></p>
-
-    <p><em>Écrit par <strong>Alayde Tech</strong> — Sites web pour associations engagées dans la protection des femmes et des enfants.</em></p>
   `
 },
 
